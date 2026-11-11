@@ -38,7 +38,7 @@ a{color:inherit}
 .hero{position:relative;min-height:100vh;min-height:100svh;overflow:hidden;background:var(--mar)}
 #mapa{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none}
 #mapa.glisse{cursor:grabbing}
-.voile{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(247,242,232,.94) 0,rgba(247,242,232,.82) 34%,rgba(247,242,232,0) 58%);transition:opacity .5s}
+.voile{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(255,255,255,.93) 0,rgba(255,255,255,.8) 34%,rgba(255,255,255,0) 58%);transition:opacity .5s}
 .nav{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:18px 0;pointer-events:none}
 .nav>*{pointer-events:auto}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-stretch:112%;font-size:22px;letter-spacing:-.01em}
@@ -78,7 +78,7 @@ a{color:inherit}
 
 /* CARTE DESSINEE */
 #mapa{background:#b8dce3}
-.papel{position:absolute;inset:0;pointer-events:none;opacity:.55;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .42 0 0 0 0 .35 0 0 0 0 .22 0 0 0 .22 0'/></filter><rect width='260' height='260' filter='url(%23n)'/></svg>")}
+.papel{position:absolute;inset:0;pointer-events:none;opacity:.12;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .42 0 0 0 0 .35 0 0 0 0 .22 0 0 0 .22 0'/></filter><rect width='260' height='260' filter='url(%23n)'/></svg>")}
 #base path,#base use{fill:none;stroke-linecap:round;stroke-linejoin:round}
 #base .mer2{fill:#a8d3dc}#base .mer3{fill:#99c9d3}
 #base .terre{fill:#f5edd8;stroke:#2e3b45;stroke-width:2.6}
@@ -110,29 +110,29 @@ a{color:inherit}
 .nome{font-family:"Shantell Sans","Comic Neue",sans-serif;font-weight:700;fill:#26323b;paint-order:stroke;stroke:#f5edd8;stroke-width:7px;stroke-linejoin:round;text-anchor:middle;pointer-events:none;letter-spacing:.03em}
 .n-neighbourhood,.n-hamlet{font-weight:500;opacity:.7}
 .n-cape{font-style:italic;font-weight:500;fill:#24586b;stroke:#b8dce3}
-#mapa{background:#f4ead0}
-#base .k-mar{fill:#d7e7e4}
-#base .k-eco{fill:none;stroke:#6f9fb0;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-dasharray:7 8;stroke-linecap:round;opacity:.75}
-#base .k-eco2{opacity:.4}
-#base .k-onda{fill:none;stroke:#5b8fa3;stroke-width:1.8px;vector-effect:non-scaling-stroke;stroke-linecap:round}
-#base .k-terra{fill:#f4ead0}
+#mapa{background:#d4ecae}
+#base .k-mar{fill:#8fd6ea}
+#base .k-eco{fill:none;stroke:#fff;stroke-width:1.6px;vector-effect:non-scaling-stroke;stroke-dasharray:8 9;stroke-linecap:round;opacity:.85}
+#base .k-eco2{opacity:.5}
+#base .k-onda{fill:none;stroke:#fff;stroke-width:2.2px;vector-effect:non-scaling-stroke;stroke-linecap:round}
+#base .k-terra{fill:#d4ecae}
 #base .k-fora{fill:url(#pFora)}
-#base .k-praia{fill:#f2d891}
-#base .k-lago{fill:#c3dde2;stroke:#4f8aa0;stroke-width:1.6px;vector-effect:non-scaling-stroke}
-#base .k-rio{fill:none;stroke:#5a9bb4;stroke-width:3.4px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
-#base .k-est1{fill:none;stroke:#9a6b3c;stroke-width:3px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
-#base .k-est2{fill:none;stroke:#b58a57;stroke-width:2px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
-#base .k-cam{fill:none;stroke:#a5875c;stroke-width:2.2px;vector-effect:non-scaling-stroke;stroke-dasharray:1 8;stroke-linecap:round}
+#base .k-praia{fill:#ffe08a}
+#base .k-lago{fill:#8fd6ea;stroke:#3a9cc4;stroke-width:1.8px;vector-effect:non-scaling-stroke}
+#base .k-rio{fill:none;stroke:#3fa9d6;stroke-width:3.6px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
+#base .k-rua-c{fill:none;stroke:#2e3b45;stroke-width:5.5px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
+#base .k-rua{fill:none;stroke:#ffd84d;stroke-width:3px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
 #base .k-costa{fill:none;stroke:#2e3b45;stroke-width:2.4px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
-#base .k-lim{fill:none;stroke:#c4572f;stroke-width:2.4px;vector-effect:non-scaling-stroke;stroke-dasharray:1 8;stroke-linecap:round}
-#base .k-tronco{stroke:#6b4f33;stroke-width:1.6px;vector-effect:non-scaling-stroke}
-#base .k-arv{fill:#a5b86e;stroke:#3f4e28;stroke-width:1.3px;vector-effect:non-scaling-stroke}
-#base .k-pinho{fill:#80995a;stroke:#3f4e28;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+#base .k-lim{fill:none;stroke:#e2477a;stroke-width:2.6px;vector-effect:non-scaling-stroke;stroke-dasharray:1 8;stroke-linecap:round}
+#base .k-bosque{fill:#b6dd86}
+#base .k-tronco{stroke:#7a5233;stroke-width:1.6px;vector-effect:non-scaling-stroke}
+#base .k-arv{fill:#6cc04a;stroke:#2f6b2a;stroke-width:1.3px;vector-effect:non-scaling-stroke}
+#base .k-pinho{fill:#3f9a4a;stroke:#2f6b2a;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
 .tr{stroke:#2e3b45;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
-.nm{font-family:"Shantell Sans","Comic Neue",sans-serif;font-weight:700;fill:#26323b;paint-order:stroke;stroke:#f4ead0;stroke-linejoin:round;text-anchor:middle;pointer-events:none;letter-spacing:.02em}
+.nm{font-family:"Shantell Sans","Comic Neue",sans-serif;font-weight:700;fill:#26323b;paint-order:stroke;stroke:#fff;stroke-linejoin:round;text-anchor:middle;pointer-events:none;letter-spacing:.02em}
 .nm-sede{letter-spacing:.07em}
-.nm-viz{fill:#8d8068;font-weight:500;font-style:italic;stroke:none;letter-spacing:.09em}
-.nm-mar,.nm-rio{fill:#3d7c93;font-style:italic;font-weight:500;stroke:none;letter-spacing:.12em}
+.nm-viz{fill:#5f7a4a;font-weight:500;font-style:italic;stroke:none;letter-spacing:.09em}
+.nm-mar,.nm-rio{fill:#1f6f99;font-style:italic;font-weight:500;stroke:none;letter-spacing:.12em}
 .escala{display:none}
 .fala-t{font-family:"Shantell Sans",sans-serif;font-size:15px;font-weight:700}
 .zoom{position:absolute;right:18px;bottom:46px;z-index:3;display:flex;flex-direction:column;gap:6px}
@@ -232,6 +232,12 @@ footer a{color:var(--amarelo)}
 .med div{display:flex;gap:10px;justify-content:flex-end}
 .med button{font:inherit;font-weight:700;padding:8px 18px;border-radius:8px;border:2px solid #2e3b45;background:#f7f2e8;color:#18222b;cursor:pointer}
 </style>
+<style>
+h1 .roda-w{display:block;font-size:.6em;line-height:1.12;min-height:2.3em;margin-top:.25em}
+#roda{transition:opacity .35s}
+#roda.sai{opacity:0}
+@media (prefers-reduced-motion:reduce){#roda{transition:none}}
+</style>
 </head>
 <body>
 
@@ -243,7 +249,7 @@ footer a{color:var(--amarelo)}
       <pattern id="pMato" width="44" height="44" patternUnits="userSpaceOnUse"><rect width="44" height="44" fill="#d9ddaa"/><path d="M5 13c3-6 8-6 10 0M24 33c3-6 8-6 10 0M28 10c2-4 6-4 8 0M6 35c2-4 6-4 8 0" fill="none" stroke="#5f6c33" stroke-width="1.6" stroke-linecap="round"/></pattern>
       <pattern id="pUrb" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><rect width="16" height="16" fill="#f0e2c9"/><path d="M0 8h16" stroke="#d6bc96" stroke-width="1.3"/></pattern>
       <pattern id="pAreia" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#f4e0ab"/><circle cx="4" cy="5" r="1.1" fill="#c09a52"/><circle cx="12" cy="11" r="1.1" fill="#c09a52"/><circle cx="10" cy="2" r=".8" fill="#c09a52"/></pattern>
-      <pattern id="pFora" width="300" height="300" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><rect width="300" height="300" fill="#ece3cb"/><path d="M0 150h300" stroke="#d8cdb0" stroke-width="22"/></pattern>
+      <pattern id="pFora" width="300" height="300" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><rect width="300" height="300" fill="#e7f3d6"/><path d="M0 150h300" stroke="#d3e8bc" stroke-width="22"/></pattern>
       <pattern id="pPaul" width="26" height="18" patternUnits="userSpaceOnUse"><rect width="26" height="18" fill="#d3e6de"/><path d="M3 8h8M15 14h8M16 3h5" stroke="#5e9fb0" stroke-width="1.5" stroke-linecap="round"/></pattern>
     </defs>
     <g id="mundo"><g id="base"></g></g>
@@ -262,7 +268,7 @@ footer a{color:var(--amarelo)}
       </nav>
     </div>
     <div class="accroche">
-      <h1><span class="sobre">Gestão de alojamento local em Mortágua · 28 AL no RNAL</span>O seu AL a render.<br><em>Sem</em> lhe tirar as noites.</h1>
+      <h1><span class="sobre">Gestão de alojamento local em Mortágua</span>28 AL em Mortágua.<span class="roda-w"><em>Todos</em> <span id="roda">com hóspedes a perguntar pelo wifi.</span></span></h1>
       <p class="gratis">Pedido de contacto gratuito</p>
       <ul class="servs"><li>Reservas e preços</li><li>Hóspedes 24h</li><li>Limpeza e roupa</li><li>Avarias</li><li>Prazos legais</li><li>Contas claras</li></ul>
 <form class="contacto" id="f-contacto" novalidate>
@@ -389,7 +395,7 @@ footer a{color:var(--amarelo)}
 
 <script>
 const DATA={"concelho":"Mortágua","data_ref":"2026-11-08","data_ref_pt":"8 de novembro de 2026","total":28,"novos180":2,"mod":{"M":22,"A":5,"Q":1},"freguesias":["Espinho","Marmeleira","Mortágua, Vale de Remígio, Cortegaça e Almaça","Pala","Sobral","Trezói"],"freg_tot":[["Espinho",10],["Sobral",9],["Pala",4],["Mortágua, Vale de Remígio, Cortegaça e Almaça",2],["Marmeleira",2],["Trezói",1]],"anos":[["2016",1],["2020",12],["2021",3],["2022",1],["2023",6],["2025",3],["2026",2]],"conc_em":"em Mortágua","conc_de":"de Mortágua","conc_em_m":"Em Mortágua","rnal_url":"/pt/mortagua/rnal.json"};
-const ZONE={"w":20101,"h":22001,"centro":[8434,17191],"lugares":[["sede","MORTÁGUA",8445,17954,330],["v","Marmeleira",11245,19746,187],["v","Trezói",4048,16824,187],["v","Espinho",6499,10304,187],["v","Pala",9356,8164,187],["v","Sobral",14907,9020,187],["rio","Rio Mondego",18195,20512,165,9],["viz","Anadia",3360,8362,165],["viz","Penacova",2732,19252,165],["viz","Santa Comba Dão",17716,17366,165],["viz","Tondela",16550,4242,165],["viz","Águeda",5612,2782,165]],"mer":[],"plages":[],"eau":[],"falaises":[],"rios":[[[20101,20871],[17178,20412],[13599,21095],[13230,21428],[13005,22001]]],"casas":[[8441,17174,3],[8631,17181,1],[8534,17372,1],[8241,17196,1],[8349,17385,1],[8725,17380,1],[8145,17004,1],[8822,17174,1],[8740,16992,1],[8046,17198,1],[8424,16828,1],[8244,17569,1],[9061,20618,0],[8963,20437,0],[9264,20626,0],[9171,20421,0],[8842,20624,0],[11245,19286,0],[11433,19284,0],[11127,19104,0],[11051,19299,0],[11370,19482,0],[4049,16365,0],[3941,16551,0],[4148,16179,0],[4154,16560,0],[3947,16182,0],[6475,10023,0],[6715,10040,0],[6289,10035,0],[6620,9837,0],[6396,9838,0],[9345,7700,0],[9257,7900,0],[9568,7707,0],[9155,7715,0],[9453,7516,0],[14872,8549,0],[15061,8553,0],[14966,8756,0],[14653,8572,0],[14981,8366,0],[9133,12111,2],[15723,17900,2],[10917,2403,2],[15708,11748,2],[16965,19503,2],[7004,5324,2],[10881,13841,2],[10711,4271,2],[13741,13842,2],[16776,9799,2],[6445,12477,2]],"tuk":[],"costa":false,"croquis":true,"u":150.0,"s0":0.09};
+const ZONE={"w":20101,"h":22001,"centro":[8434,17191],"lugares":[["sede","MORTÁGUA",8400,17958,330],["v","Marmeleira",11211,19750,187],["v","Trezói",4111,16997,187],["v","Espinho",6475,10300,187],["v","Pala",9322,8144,187],["v","Sobral",14955,9001,187],["rio","Rio Mondego",18195,20512,165,9],["viz","Anadia",3360,8362,165],["viz","Penacova",2732,19252,165],["viz","Santa Comba Dão",17716,17366,165],["viz","Tondela",16550,4242,165],["viz","Águeda",5612,2782,165]],"mer":[],"plages":[],"eau":[],"falaises":[],"rios":[[[20101,20871],[17178,20412],[13599,21095],[13230,21428],[13005,22001]]],"casas":[[8449,17182,3],[8641,17182,1],[8250,17207,1],[8536,17384,1],[8116,16997,1],[8755,17365,1],[8759,16991,1],[8210,17572,1],[8420,16836,1],[7909,17380,1],[8828,16811,1],[7924,16992,1],[9043,20600,0],[8949,20814,0],[8845,20612,0],[9175,20807,0],[9266,20266,0],[11041,19281,0],[11471,19279,0],[11356,19486,0],[10950,19100,0],[11235,18935,0],[4055,16374,0],[3863,16362,0],[4266,16378,0],[4130,16191,0],[4239,16733,0],[6494,10015,0],[6292,10031,0],[6703,10036,0],[6601,9826,0],[6284,9671,0],[9335,7707,0],[9245,7522,0],[9436,7523,0],[9568,7712,0],[9026,7880,0],[14793,8737,0],[14763,8375,0],[15087,8566,0],[14958,8363,0],[15175,8372,0],[16965,19503,2],[7004,5324,2],[10881,13841,2],[10711,4271,2],[15231,17270,2],[14231,12257,2],[16776,9799,2],[6445,12477,2],[11572,1852,2],[11518,11542,2],[14333,19497,2]],"tuk":[],"costa":false,"croquis":true,"u":150.0,"s0":0.09};
 const FORM_URL="https://script.google.com/macros/s/AKfycbxwnyOWuOgnQ2B0Tt80EEkKIetwzZYKj0BX6JDREwDRHdlRyLzmVsHvYoOz5avhBOp8Kw/exec";
 /* ---------- medição (só com consentimento) ---------- */
 const M=(function(){
@@ -462,7 +468,7 @@ for(const[k,n,x,y,t,a]of ZONE.lugares){if(!t)continue;const e=el("text",{x,y,cla
 /* ---------- maisons dessinées, en grappes ---------- */
 const casas=[];
 const NOMES=["Casa do Sol","Ocean View T2 (vista parcial)","Blue Door Apartment","Vila Gaivota","Sunny Retreat","Casa da Avó Lurdes","Golden Coast Loft","Monte da Paz (com galo)","Cantinho do Sossego","Sea Breeze T1","Suites do Chefe","Casa Azulejo"];
-const TELHAS=["#c9603a","#c9603a","#b9532f","#d4703f","#2f6f9a"];
+const TELHAS=["#e4572e","#e4572e","#d9482b","#f28c38","#2f7fc1"];
 function casa(x,y,o){
   o=o||{};const monte=o.t===2;
   if(o.t===3){const w=U*1.05,h=w*.7,e=g({class:"casa",transform:`translate(${f1(x)},${f1(y)})`},camadaCasas);
@@ -477,7 +483,7 @@ function casa(x,y,o){
   const cor=monte?"#c9603a":pick(TELHAS),tp=-h/2,r=w*(monte?.22:.42);
   const e=g({class:"casa",transform:`translate(${f1(x)},${f1(y)}) rotate(${f1(a)})`},camadaCasas);
   const i=g(o.pop?{class:"pop"}:{},e);
-  el("path",{class:"tr",d:`M${f1(-w/2)},${f1(tp)}h${f1(w)}v${f1(h)}h${f1(-w)}z`,fill:"#fbf7ee"},i);
+  el("path",{class:"tr",d:`M${f1(-w/2)},${f1(tp)}h${f1(w)}v${f1(h)}h${f1(-w)}z`,fill:"#fff"},i);
   el("path",{class:"tecto tr",fill:cor,d:`M${f1(-w/2-w*.07)},${f1(tp)}L${f1(monte?-w*.3:0)},${f1(tp-r)}${monte?`L${f1(w*.3)},${f1(tp-r)}`:""}L${f1(w/2+w*.07)},${f1(tp)}z`},i);
   el("rect",{x:f1(-w*.09),y:f1(h/2-h*.5),width:f1(w*.18),height:f1(h*.5),fill:"#2e3b45"},i);
   el("rect",{class:"tr",x:f1(w*.2),y:f1(tp+h*.22),width:f1(w*.17),height:f1(w*.15),fill:"#9fd4e3"},i);
@@ -599,5 +605,6 @@ if(DATA){
 }
 })();
 </script>
+<script>(()=>{const F=["com hóspedes a perguntar pelo wifi.", "com alguém a chegar às 3h da manhã.", "com malas de rodas na calçada.", "com uma chave que não abre.", "com um check-out às 18h.", "com uma sogra a dormir no sofá.", "com um vizinho a contar as malas."],e=document.getElementById('roda');if(!e||matchMedia('(prefers-reduced-motion: reduce)').matches)return;let i=0;setInterval(()=>{e.classList.add('sai');setTimeout(()=>{i=(i+1)%F.length;e.textContent=F[i];e.classList.remove('sai')},350)},3200)})()</script>
 </body>
 </html>

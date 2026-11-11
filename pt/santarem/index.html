@@ -38,7 +38,7 @@ a{color:inherit}
 .hero{position:relative;min-height:100vh;min-height:100svh;overflow:hidden;background:var(--mar)}
 #mapa{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none}
 #mapa.glisse{cursor:grabbing}
-.voile{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(247,242,232,.94) 0,rgba(247,242,232,.82) 34%,rgba(247,242,232,0) 58%);transition:opacity .5s}
+.voile{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(255,255,255,.93) 0,rgba(255,255,255,.8) 34%,rgba(255,255,255,0) 58%);transition:opacity .5s}
 .nav{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:18px 0;pointer-events:none}
 .nav>*{pointer-events:auto}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-stretch:112%;font-size:22px;letter-spacing:-.01em}
@@ -78,7 +78,7 @@ a{color:inherit}
 
 /* CARTE DESSINEE */
 #mapa{background:#b8dce3}
-.papel{position:absolute;inset:0;pointer-events:none;opacity:.55;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .42 0 0 0 0 .35 0 0 0 0 .22 0 0 0 .22 0'/></filter><rect width='260' height='260' filter='url(%23n)'/></svg>")}
+.papel{position:absolute;inset:0;pointer-events:none;opacity:.12;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .42 0 0 0 0 .35 0 0 0 0 .22 0 0 0 .22 0'/></filter><rect width='260' height='260' filter='url(%23n)'/></svg>")}
 #base path,#base use{fill:none;stroke-linecap:round;stroke-linejoin:round}
 #base .mer2{fill:#a8d3dc}#base .mer3{fill:#99c9d3}
 #base .terre{fill:#f5edd8;stroke:#2e3b45;stroke-width:2.6}
@@ -110,29 +110,29 @@ a{color:inherit}
 .nome{font-family:"Shantell Sans","Comic Neue",sans-serif;font-weight:700;fill:#26323b;paint-order:stroke;stroke:#f5edd8;stroke-width:7px;stroke-linejoin:round;text-anchor:middle;pointer-events:none;letter-spacing:.03em}
 .n-neighbourhood,.n-hamlet{font-weight:500;opacity:.7}
 .n-cape{font-style:italic;font-weight:500;fill:#24586b;stroke:#b8dce3}
-#mapa{background:#f4ead0}
-#base .k-mar{fill:#d7e7e4}
-#base .k-eco{fill:none;stroke:#6f9fb0;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-dasharray:7 8;stroke-linecap:round;opacity:.75}
-#base .k-eco2{opacity:.4}
-#base .k-onda{fill:none;stroke:#5b8fa3;stroke-width:1.8px;vector-effect:non-scaling-stroke;stroke-linecap:round}
-#base .k-terra{fill:#f4ead0}
+#mapa{background:#d4ecae}
+#base .k-mar{fill:#8fd6ea}
+#base .k-eco{fill:none;stroke:#fff;stroke-width:1.6px;vector-effect:non-scaling-stroke;stroke-dasharray:8 9;stroke-linecap:round;opacity:.85}
+#base .k-eco2{opacity:.5}
+#base .k-onda{fill:none;stroke:#fff;stroke-width:2.2px;vector-effect:non-scaling-stroke;stroke-linecap:round}
+#base .k-terra{fill:#d4ecae}
 #base .k-fora{fill:url(#pFora)}
-#base .k-praia{fill:#f2d891}
-#base .k-lago{fill:#c3dde2;stroke:#4f8aa0;stroke-width:1.6px;vector-effect:non-scaling-stroke}
-#base .k-rio{fill:none;stroke:#5a9bb4;stroke-width:3.4px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
-#base .k-est1{fill:none;stroke:#9a6b3c;stroke-width:3px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
-#base .k-est2{fill:none;stroke:#b58a57;stroke-width:2px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
-#base .k-cam{fill:none;stroke:#a5875c;stroke-width:2.2px;vector-effect:non-scaling-stroke;stroke-dasharray:1 8;stroke-linecap:round}
+#base .k-praia{fill:#ffe08a}
+#base .k-lago{fill:#8fd6ea;stroke:#3a9cc4;stroke-width:1.8px;vector-effect:non-scaling-stroke}
+#base .k-rio{fill:none;stroke:#3fa9d6;stroke-width:3.6px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
+#base .k-rua-c{fill:none;stroke:#2e3b45;stroke-width:5.5px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
+#base .k-rua{fill:none;stroke:#ffd84d;stroke-width:3px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
 #base .k-costa{fill:none;stroke:#2e3b45;stroke-width:2.4px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
-#base .k-lim{fill:none;stroke:#c4572f;stroke-width:2.4px;vector-effect:non-scaling-stroke;stroke-dasharray:1 8;stroke-linecap:round}
-#base .k-tronco{stroke:#6b4f33;stroke-width:1.6px;vector-effect:non-scaling-stroke}
-#base .k-arv{fill:#a5b86e;stroke:#3f4e28;stroke-width:1.3px;vector-effect:non-scaling-stroke}
-#base .k-pinho{fill:#80995a;stroke:#3f4e28;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+#base .k-lim{fill:none;stroke:#e2477a;stroke-width:2.6px;vector-effect:non-scaling-stroke;stroke-dasharray:1 8;stroke-linecap:round}
+#base .k-bosque{fill:#b6dd86}
+#base .k-tronco{stroke:#7a5233;stroke-width:1.6px;vector-effect:non-scaling-stroke}
+#base .k-arv{fill:#6cc04a;stroke:#2f6b2a;stroke-width:1.3px;vector-effect:non-scaling-stroke}
+#base .k-pinho{fill:#3f9a4a;stroke:#2f6b2a;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
 .tr{stroke:#2e3b45;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
-.nm{font-family:"Shantell Sans","Comic Neue",sans-serif;font-weight:700;fill:#26323b;paint-order:stroke;stroke:#f4ead0;stroke-linejoin:round;text-anchor:middle;pointer-events:none;letter-spacing:.02em}
+.nm{font-family:"Shantell Sans","Comic Neue",sans-serif;font-weight:700;fill:#26323b;paint-order:stroke;stroke:#fff;stroke-linejoin:round;text-anchor:middle;pointer-events:none;letter-spacing:.02em}
 .nm-sede{letter-spacing:.07em}
-.nm-viz{fill:#8d8068;font-weight:500;font-style:italic;stroke:none;letter-spacing:.09em}
-.nm-mar,.nm-rio{fill:#3d7c93;font-style:italic;font-weight:500;stroke:none;letter-spacing:.12em}
+.nm-viz{fill:#5f7a4a;font-weight:500;font-style:italic;stroke:none;letter-spacing:.09em}
+.nm-mar,.nm-rio{fill:#1f6f99;font-style:italic;font-weight:500;stroke:none;letter-spacing:.12em}
 .escala{display:none}
 .fala-t{font-family:"Shantell Sans",sans-serif;font-size:15px;font-weight:700}
 .zoom{position:absolute;right:18px;bottom:46px;z-index:3;display:flex;flex-direction:column;gap:6px}
@@ -232,6 +232,12 @@ footer a{color:var(--amarelo)}
 .med div{display:flex;gap:10px;justify-content:flex-end}
 .med button{font:inherit;font-weight:700;padding:8px 18px;border-radius:8px;border:2px solid #2e3b45;background:#f7f2e8;color:#18222b;cursor:pointer}
 </style>
+<style>
+h1 .roda-w{display:block;font-size:.6em;line-height:1.12;min-height:2.3em;margin-top:.25em}
+#roda{transition:opacity .35s}
+#roda.sai{opacity:0}
+@media (prefers-reduced-motion:reduce){#roda{transition:none}}
+</style>
 </head>
 <body>
 
@@ -243,7 +249,7 @@ footer a{color:var(--amarelo)}
       <pattern id="pMato" width="44" height="44" patternUnits="userSpaceOnUse"><rect width="44" height="44" fill="#d9ddaa"/><path d="M5 13c3-6 8-6 10 0M24 33c3-6 8-6 10 0M28 10c2-4 6-4 8 0M6 35c2-4 6-4 8 0" fill="none" stroke="#5f6c33" stroke-width="1.6" stroke-linecap="round"/></pattern>
       <pattern id="pUrb" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><rect width="16" height="16" fill="#f0e2c9"/><path d="M0 8h16" stroke="#d6bc96" stroke-width="1.3"/></pattern>
       <pattern id="pAreia" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#f4e0ab"/><circle cx="4" cy="5" r="1.1" fill="#c09a52"/><circle cx="12" cy="11" r="1.1" fill="#c09a52"/><circle cx="10" cy="2" r=".8" fill="#c09a52"/></pattern>
-      <pattern id="pFora" width="300" height="300" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><rect width="300" height="300" fill="#ece3cb"/><path d="M0 150h300" stroke="#d8cdb0" stroke-width="22"/></pattern>
+      <pattern id="pFora" width="300" height="300" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><rect width="300" height="300" fill="#e7f3d6"/><path d="M0 150h300" stroke="#d3e8bc" stroke-width="22"/></pattern>
       <pattern id="pPaul" width="26" height="18" patternUnits="userSpaceOnUse"><rect width="26" height="18" fill="#d3e6de"/><path d="M3 8h8M15 14h8M16 3h5" stroke="#5e9fb0" stroke-width="1.5" stroke-linecap="round"/></pattern>
     </defs>
     <g id="mundo"><g id="base"></g></g>
@@ -262,7 +268,7 @@ footer a{color:var(--amarelo)}
       </nav>
     </div>
     <div class="accroche">
-      <h1><span class="sobre">Gestão de alojamento local em Santarém · 157 AL no RNAL</span>O seu AL a render.<br><em>Sem</em> lhe tirar as noites.</h1>
+      <h1><span class="sobre">Gestão de alojamento local em Santarém</span>157 AL em Santarém.<span class="roda-w"><em>Todos</em> <span id="roda">com hóspedes a perguntar pelo wifi.</span></span></h1>
       <p class="gratis">Pedido de contacto gratuito</p>
       <ul class="servs"><li>Reservas e preços</li><li>Hóspedes 24h</li><li>Limpeza e roupa</li><li>Avarias</li><li>Prazos legais</li><li>Contas claras</li></ul>
 <form class="contacto" id="f-contacto" novalidate>
@@ -389,7 +395,7 @@ footer a{color:var(--amarelo)}
 
 <script>
 const DATA={"concelho":"Santarém","data_ref":"2026-11-08","data_ref_pt":"8 de novembro de 2026","total":157,"novos180":6,"mod":{"M":73,"A":38,"H":6,"Q":16,"E":24},"freguesias":["Abitureiras","Abrã","Achete, Azoia de Baixo e Póvoa de Santarém","Alcanede","Alcanhões","Almoster","Amiais de Baixo","Arneiro das Milhariças","Azoia de Cima e Tremês","Casével e Vaqueiros","Marvila, Ribeira Santarém, S.Salvador, S.Nicolau","Moçarria","Pernes","Póvoa da Isenta","Romeira e Várzea","São Vicente do Paul e Vale de Figueira (Extinta)","Vale de Santarém"],"freg_tot":[["Marvila, Ribeira Santarém, S.Salvador, S.Nicolau",64],["Achete, Azoia de Baixo e Póvoa de Santarém",12],["São Vicente do Paul e Vale de Figueira (Extinta)",11],["Romeira e Várzea",9],["Azoia de Cima e Tremês",7],["Alcanede",6],["Almoster",6],["Arneiro das Milhariças",5],["Casével e Vaqueiros",5],["Moçarria",5],["Vale de Santarém",5],["Abrã",4],["Póvoa da Isenta",4],["Abitureiras",4],["Amiais de Baixo",4],["Pernes",3],["Alcanhões",3]],"anos":[["2010",1],["2011",2],["2012",3],["2013",2],["2014",3],["2015",3],["2016",3],["2017",13],["2018",11],["2019",16],["2020",8],["2021",22],["2022",17],["2023",20],["2024",12],["2025",13],["2026",8]],"conc_em":"em Santarém","conc_de":"de Santarém","conc_em_m":"Em Santarém","rnal_url":"/pt/santarem/rnal.json"};
-const ZONE={"w":21999,"h":22000,"centro":[11013,11033],"lugares":[["sede","SANTARÉM",10965,11796,330],["v","Alcanhões",13629,15548,187],["v","Pernes",12872,4108,187],["v","Arneiro das Milhariças",8511,4240,187],["v","Abitureiras",2917,12290,187],["v","Moçarria",4119,17852,187],["v","Almoster",1470,21866,187],["rio","Rio Tejo",13823,18655,165,-41],["viz","Alpiarça",18488,17492,165]],"mer":[],"plages":[],"eau":[],"falaises":[],"rios":[[[21999,9407],[17725,12482],[16765,13629],[15399,16518],[14432,18074],[13738,18803],[12414,19892],[11790,20719],[11365,22000]]],"casas":[[11026,11016,3],[10812,11046,1],[11100,11208,1],[10909,11233,1],[10595,11048,1],[10719,10851,1],[11316,10851,1],[11406,11036,1],[10790,10660,1],[10489,10850,1],[11406,11410,1],[11008,10651,1],[13636,15096,0],[13722,14893,0],[13436,15086,0],[13825,15076,0],[13526,15284,0],[5896,7601,0],[5777,7406,0],[5669,7613,0],[5763,7800,0],[6010,7805,0],[6723,15757,0],[6930,15730,0],[6639,15571,0],[6622,15940,0],[7009,15917,0],[17939,11588,0],[17839,11404,0],[17703,11596,0],[18140,11585,0],[18213,11379,0],[12872,3637,0],[13072,3638,0],[12657,3637,0],[12784,3827,0],[12977,3844,0],[8544,3777,0],[8354,3794,0],[8472,3976,0],[8745,3796,0],[8438,3582,0],[2879,11846,0],[3072,11819,0],[2789,11660,0],[2651,11849,0],[3193,12026,0],[4088,17411,0],[3888,17406,0],[3972,17203,0],[4270,17401,0],[4379,17588,0],[18281,3201,0],[18087,3195,0],[18486,3189,0],[18152,3385,0],[18270,2812,0],[1448,21414,0],[1262,21398,0],[1585,21203,0],[1364,21602,0],[1689,21394,0],[9102,21649,2],[10307,6935,2],[9882,17916,2],[16449,9330,2],[20026,12530,2],[2861,2254,2],[5776,21621,2],[7104,12182,2],[11776,18765,2],[911,4261,2],[1201,6120,2],[16001,4533,2],[722,8367,2],[18460,5599,2]],"tuk":[],"costa":false,"croquis":true,"u":150.0,"s0":0.09};
+const ZONE={"w":21999,"h":22000,"centro":[11013,11033],"lugares":[["sede","SANTARÉM",10959,11986,330],["v","Alcanhões",13561,15546,187],["v","Pernes",12940,4101,187],["v","Arneiro das Milhariças",8526,4232,187],["v","Abitureiras",2873,12112,187],["v","Moçarria",4056,17851,187],["v","Almoster",1530,22024,187],["rio","Rio Tejo",13823,18655,165,-41],["viz","Alpiarça",18488,17492,165]],"mer":[],"plages":[],"eau":[],"falaises":[],"rios":[[[21999,9407],[17725,12482],[16765,13629],[15399,16518],[14432,18074],[13738,18803],[12414,19892],[11790,20719],[11365,22000]]],"casas":[[11011,11050,3],[11113,10847,1],[10918,10854,1],[11231,11048,1],[10726,10868,1],[11414,11034,1],[10724,11223,1],[11329,10844,1],[11220,11400,1],[10419,11029,1],[10911,11600,1],[10490,11228,1],[13617,15092,0],[13714,14903,0],[13431,15085,0],[13535,15282,0],[13507,14901,0],[5766,7407,0],[6107,7596,0],[6000,7798,0],[5682,7600,0],[6188,7415,0],[6725,15752,0],[6923,15736,0],[6513,15734,0],[6641,15942,0],[6846,15545,0],[18122,11584,0],[17737,11597,0],[17820,11411,0],[18007,11769,0],[17510,11567,0],[12768,3486,0],[12786,3822,0],[12973,3837,0],[12993,3476,0],[13180,3819,0],[8560,3784,0],[8375,3785,0],[8745,3763,0],[8475,3602,0],[8477,3968,0],[2872,11848,0],[3078,11842,0],[2771,11650,0],[2684,11845,0],[2960,11651,0],[4093,17400,0],[3870,17402,0],[3976,17213,0],[3971,17587,0],[4369,17567,0],[18467,3194,0],[18191,3367,0],[18159,2999,0],[18382,3012,0],[17954,3015,0],[1650,21408,0],[1379,21569,0],[1365,21220,0],[1464,21760,0],[1793,21204,0],[20026,12530,2],[12994,12969,2],[2861,2254,2],[5776,21621,2],[7104,12182,2],[11776,18765,2],[911,4261,2],[1201,6120,2],[16001,4533,2],[722,8367,2],[18460,5599,2],[15321,2821,2],[17161,8919,2],[20030,8312,2]],"tuk":[],"costa":false,"croquis":true,"u":150.0,"s0":0.09};
 const FORM_URL="https://script.google.com/macros/s/AKfycbxwnyOWuOgnQ2B0Tt80EEkKIetwzZYKj0BX6JDREwDRHdlRyLzmVsHvYoOz5avhBOp8Kw/exec";
 /* ---------- medição (só com consentimento) ---------- */
 const M=(function(){
@@ -462,7 +468,7 @@ for(const[k,n,x,y,t,a]of ZONE.lugares){if(!t)continue;const e=el("text",{x,y,cla
 /* ---------- maisons dessinées, en grappes ---------- */
 const casas=[];
 const NOMES=["Casa do Sol","Ocean View T2 (vista parcial)","Blue Door Apartment","Vila Gaivota","Sunny Retreat","Casa da Avó Lurdes","Golden Coast Loft","Monte da Paz (com galo)","Cantinho do Sossego","Sea Breeze T1","Suites do Chefe","Casa Azulejo"];
-const TELHAS=["#c9603a","#c9603a","#b9532f","#d4703f","#2f6f9a"];
+const TELHAS=["#e4572e","#e4572e","#d9482b","#f28c38","#2f7fc1"];
 function casa(x,y,o){
   o=o||{};const monte=o.t===2;
   if(o.t===3){const w=U*1.05,h=w*.7,e=g({class:"casa",transform:`translate(${f1(x)},${f1(y)})`},camadaCasas);
@@ -477,7 +483,7 @@ function casa(x,y,o){
   const cor=monte?"#c9603a":pick(TELHAS),tp=-h/2,r=w*(monte?.22:.42);
   const e=g({class:"casa",transform:`translate(${f1(x)},${f1(y)}) rotate(${f1(a)})`},camadaCasas);
   const i=g(o.pop?{class:"pop"}:{},e);
-  el("path",{class:"tr",d:`M${f1(-w/2)},${f1(tp)}h${f1(w)}v${f1(h)}h${f1(-w)}z`,fill:"#fbf7ee"},i);
+  el("path",{class:"tr",d:`M${f1(-w/2)},${f1(tp)}h${f1(w)}v${f1(h)}h${f1(-w)}z`,fill:"#fff"},i);
   el("path",{class:"tecto tr",fill:cor,d:`M${f1(-w/2-w*.07)},${f1(tp)}L${f1(monte?-w*.3:0)},${f1(tp-r)}${monte?`L${f1(w*.3)},${f1(tp-r)}`:""}L${f1(w/2+w*.07)},${f1(tp)}z`},i);
   el("rect",{x:f1(-w*.09),y:f1(h/2-h*.5),width:f1(w*.18),height:f1(h*.5),fill:"#2e3b45"},i);
   el("rect",{class:"tr",x:f1(w*.2),y:f1(tp+h*.22),width:f1(w*.17),height:f1(w*.15),fill:"#9fd4e3"},i);
@@ -599,5 +605,6 @@ if(DATA){
 }
 })();
 </script>
+<script>(()=>{const F=["com hóspedes a perguntar pelo wifi.", "com alguém a chegar às 3h da manhã.", "com malas de rodas na calçada.", "com uma chave que não abre.", "com um check-out às 18h.", "com uma sogra a dormir no sofá.", "com um vizinho a contar as malas."],e=document.getElementById('roda');if(!e||matchMedia('(prefers-reduced-motion: reduce)').matches)return;let i=0;setInterval(()=>{e.classList.add('sai');setTimeout(()=>{i=(i+1)%F.length;e.textContent=F[i];e.classList.remove('sai')},350)},3200)})()</script>
 </body>
 </html>

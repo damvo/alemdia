@@ -38,7 +38,7 @@ a{color:inherit}
 .hero{position:relative;min-height:100vh;min-height:100svh;overflow:hidden;background:var(--mar)}
 #mapa{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none}
 #mapa.glisse{cursor:grabbing}
-.voile{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(247,242,232,.94) 0,rgba(247,242,232,.82) 34%,rgba(247,242,232,0) 58%);transition:opacity .5s}
+.voile{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(255,255,255,.93) 0,rgba(255,255,255,.8) 34%,rgba(255,255,255,0) 58%);transition:opacity .5s}
 .nav{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:18px 0;pointer-events:none}
 .nav>*{pointer-events:auto}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-stretch:112%;font-size:22px;letter-spacing:-.01em}
@@ -78,7 +78,7 @@ a{color:inherit}
 
 /* CARTE DESSINEE */
 #mapa{background:#b8dce3}
-.papel{position:absolute;inset:0;pointer-events:none;opacity:.55;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .42 0 0 0 0 .35 0 0 0 0 .22 0 0 0 .22 0'/></filter><rect width='260' height='260' filter='url(%23n)'/></svg>")}
+.papel{position:absolute;inset:0;pointer-events:none;opacity:.12;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .42 0 0 0 0 .35 0 0 0 0 .22 0 0 0 .22 0'/></filter><rect width='260' height='260' filter='url(%23n)'/></svg>")}
 #base path,#base use{fill:none;stroke-linecap:round;stroke-linejoin:round}
 #base .mer2{fill:#a8d3dc}#base .mer3{fill:#99c9d3}
 #base .terre{fill:#f5edd8;stroke:#2e3b45;stroke-width:2.6}
@@ -110,29 +110,29 @@ a{color:inherit}
 .nome{font-family:"Shantell Sans","Comic Neue",sans-serif;font-weight:700;fill:#26323b;paint-order:stroke;stroke:#f5edd8;stroke-width:7px;stroke-linejoin:round;text-anchor:middle;pointer-events:none;letter-spacing:.03em}
 .n-neighbourhood,.n-hamlet{font-weight:500;opacity:.7}
 .n-cape{font-style:italic;font-weight:500;fill:#24586b;stroke:#b8dce3}
-#mapa{background:#f4ead0}
-#base .k-mar{fill:#d7e7e4}
-#base .k-eco{fill:none;stroke:#6f9fb0;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-dasharray:7 8;stroke-linecap:round;opacity:.75}
-#base .k-eco2{opacity:.4}
-#base .k-onda{fill:none;stroke:#5b8fa3;stroke-width:1.8px;vector-effect:non-scaling-stroke;stroke-linecap:round}
-#base .k-terra{fill:#f4ead0}
+#mapa{background:#d4ecae}
+#base .k-mar{fill:#8fd6ea}
+#base .k-eco{fill:none;stroke:#fff;stroke-width:1.6px;vector-effect:non-scaling-stroke;stroke-dasharray:8 9;stroke-linecap:round;opacity:.85}
+#base .k-eco2{opacity:.5}
+#base .k-onda{fill:none;stroke:#fff;stroke-width:2.2px;vector-effect:non-scaling-stroke;stroke-linecap:round}
+#base .k-terra{fill:#d4ecae}
 #base .k-fora{fill:url(#pFora)}
-#base .k-praia{fill:#f2d891}
-#base .k-lago{fill:#c3dde2;stroke:#4f8aa0;stroke-width:1.6px;vector-effect:non-scaling-stroke}
-#base .k-rio{fill:none;stroke:#5a9bb4;stroke-width:3.4px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
-#base .k-est1{fill:none;stroke:#9a6b3c;stroke-width:3px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
-#base .k-est2{fill:none;stroke:#b58a57;stroke-width:2px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
-#base .k-cam{fill:none;stroke:#a5875c;stroke-width:2.2px;vector-effect:non-scaling-stroke;stroke-dasharray:1 8;stroke-linecap:round}
+#base .k-praia{fill:#ffe08a}
+#base .k-lago{fill:#8fd6ea;stroke:#3a9cc4;stroke-width:1.8px;vector-effect:non-scaling-stroke}
+#base .k-rio{fill:none;stroke:#3fa9d6;stroke-width:3.6px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
+#base .k-rua-c{fill:none;stroke:#2e3b45;stroke-width:5.5px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
+#base .k-rua{fill:none;stroke:#ffd84d;stroke-width:3px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
 #base .k-costa{fill:none;stroke:#2e3b45;stroke-width:2.4px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
-#base .k-lim{fill:none;stroke:#c4572f;stroke-width:2.4px;vector-effect:non-scaling-stroke;stroke-dasharray:1 8;stroke-linecap:round}
-#base .k-tronco{stroke:#6b4f33;stroke-width:1.6px;vector-effect:non-scaling-stroke}
-#base .k-arv{fill:#a5b86e;stroke:#3f4e28;stroke-width:1.3px;vector-effect:non-scaling-stroke}
-#base .k-pinho{fill:#80995a;stroke:#3f4e28;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+#base .k-lim{fill:none;stroke:#e2477a;stroke-width:2.6px;vector-effect:non-scaling-stroke;stroke-dasharray:1 8;stroke-linecap:round}
+#base .k-bosque{fill:#b6dd86}
+#base .k-tronco{stroke:#7a5233;stroke-width:1.6px;vector-effect:non-scaling-stroke}
+#base .k-arv{fill:#6cc04a;stroke:#2f6b2a;stroke-width:1.3px;vector-effect:non-scaling-stroke}
+#base .k-pinho{fill:#3f9a4a;stroke:#2f6b2a;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
 .tr{stroke:#2e3b45;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
-.nm{font-family:"Shantell Sans","Comic Neue",sans-serif;font-weight:700;fill:#26323b;paint-order:stroke;stroke:#f4ead0;stroke-linejoin:round;text-anchor:middle;pointer-events:none;letter-spacing:.02em}
+.nm{font-family:"Shantell Sans","Comic Neue",sans-serif;font-weight:700;fill:#26323b;paint-order:stroke;stroke:#fff;stroke-linejoin:round;text-anchor:middle;pointer-events:none;letter-spacing:.02em}
 .nm-sede{letter-spacing:.07em}
-.nm-viz{fill:#8d8068;font-weight:500;font-style:italic;stroke:none;letter-spacing:.09em}
-.nm-mar,.nm-rio{fill:#3d7c93;font-style:italic;font-weight:500;stroke:none;letter-spacing:.12em}
+.nm-viz{fill:#5f7a4a;font-weight:500;font-style:italic;stroke:none;letter-spacing:.09em}
+.nm-mar,.nm-rio{fill:#1f6f99;font-style:italic;font-weight:500;stroke:none;letter-spacing:.12em}
 .escala{display:none}
 .fala-t{font-family:"Shantell Sans",sans-serif;font-size:15px;font-weight:700}
 .zoom{position:absolute;right:18px;bottom:46px;z-index:3;display:flex;flex-direction:column;gap:6px}
@@ -232,6 +232,12 @@ footer a{color:var(--amarelo)}
 .med div{display:flex;gap:10px;justify-content:flex-end}
 .med button{font:inherit;font-weight:700;padding:8px 18px;border-radius:8px;border:2px solid #2e3b45;background:#f7f2e8;color:#18222b;cursor:pointer}
 </style>
+<style>
+h1 .roda-w{display:block;font-size:.6em;line-height:1.12;min-height:2.3em;margin-top:.25em}
+#roda{transition:opacity .35s}
+#roda.sai{opacity:0}
+@media (prefers-reduced-motion:reduce){#roda{transition:none}}
+</style>
 </head>
 <body>
 
@@ -243,7 +249,7 @@ footer a{color:var(--amarelo)}
       <pattern id="pMato" width="44" height="44" patternUnits="userSpaceOnUse"><rect width="44" height="44" fill="#d9ddaa"/><path d="M5 13c3-6 8-6 10 0M24 33c3-6 8-6 10 0M28 10c2-4 6-4 8 0M6 35c2-4 6-4 8 0" fill="none" stroke="#5f6c33" stroke-width="1.6" stroke-linecap="round"/></pattern>
       <pattern id="pUrb" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><rect width="16" height="16" fill="#f0e2c9"/><path d="M0 8h16" stroke="#d6bc96" stroke-width="1.3"/></pattern>
       <pattern id="pAreia" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#f4e0ab"/><circle cx="4" cy="5" r="1.1" fill="#c09a52"/><circle cx="12" cy="11" r="1.1" fill="#c09a52"/><circle cx="10" cy="2" r=".8" fill="#c09a52"/></pattern>
-      <pattern id="pFora" width="300" height="300" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><rect width="300" height="300" fill="#ece3cb"/><path d="M0 150h300" stroke="#d8cdb0" stroke-width="22"/></pattern>
+      <pattern id="pFora" width="300" height="300" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><rect width="300" height="300" fill="#e7f3d6"/><path d="M0 150h300" stroke="#d3e8bc" stroke-width="22"/></pattern>
       <pattern id="pPaul" width="26" height="18" patternUnits="userSpaceOnUse"><rect width="26" height="18" fill="#d3e6de"/><path d="M3 8h8M15 14h8M16 3h5" stroke="#5e9fb0" stroke-width="1.5" stroke-linecap="round"/></pattern>
     </defs>
     <g id="mundo"><g id="base"></g></g>
@@ -262,7 +268,7 @@ footer a{color:var(--amarelo)}
       </nav>
     </div>
     <div class="accroche">
-      <h1><span class="sobre">Gestão de alojamento local em Torres Vedras · 348 AL no RNAL</span>O seu AL a render.<br><em>Sem</em> lhe tirar as noites.</h1>
+      <h1><span class="sobre">Gestão de alojamento local em Torres Vedras</span>348 AL em Torres Vedras.<span class="roda-w"><em>Todos</em> <span id="roda">com hóspedes a perguntar pelo wifi.</span></span></h1>
       <p class="gratis">Pedido de contacto gratuito</p>
       <ul class="servs"><li>Reservas e preços</li><li>Hóspedes 24h</li><li>Limpeza e roupa</li><li>Avarias</li><li>Prazos legais</li><li>Contas claras</li></ul>
 <form class="contacto" id="f-contacto" novalidate>
@@ -389,7 +395,7 @@ footer a{color:var(--amarelo)}
 
 <script>
 const DATA={"concelho":"Torres Vedras","data_ref":"2026-11-08","data_ref_pt":"8 de novembro de 2026","total":348,"novos180":30,"mod":{"A":155,"M":137,"Q":21,"H":6,"E":29},"freguesias":["A dos Cunhados","A dos Cunhados e Maceira (Extinta)","Campelos e Outeiro da Cabeça","Carvoeira e Carmões","Dois Portos","Dois Portos e Runa (Extinta)","Freiria","Maceira","Maxial e Monte Redondo","Ponte do Rol","Ramalhal","Runa","S.P., Santiago, S.M. Castelo e S.Miguel, Matacães","Silveira","São Pedro da Cadeira","Turcifal","Ventosa"],"freg_tot":[["Silveira",108],["A dos Cunhados e Maceira (Extinta)",105],["S.P., Santiago, S.M. Castelo e S.Miguel, Matacães",32],["A dos Cunhados",30],["São Pedro da Cadeira",25],["Freiria",9],["Carvoeira e Carmões",6],["Dois Portos e Runa (Extinta)",5],["Ventosa",5],["Campelos e Outeiro da Cabeça",4],["Turcifal",4],["Ramalhal",4],["Ponte do Rol",4],["Maxial e Monte Redondo",3],["Não indicada",1],["Dois Portos",1],["Maceira",1],["Runa",1]],"anos":[["<2008",1],["2011",1],["2012",1],["2013",1],["2014",1],["2015",9],["2016",12],["2017",21],["2018",10],["2019",13],["2020",10],["2021",3],["2022",25],["2023",63],["2024",45],["2025",68],["2026",64]],"conc_em":"em Torres Vedras","conc_de":"de Torres Vedras","conc_em_m":"Em Torres Vedras","rnal_url":"/pt/torres-vedras/rnal.json"};
-const ZONE={"w":22000,"h":22000,"centro":[6945,11000],"lugares":[["sede","TORRES VEDRAS",6896,11762,330],["v","Ponte do Rol",10039,12194,187],["v","São Pedro da Cadeira",4915,15036,187],["v","Ventosa",10217,17077,187],["v","Freiria",10590,20737,187],["v","Turcifal",15832,19618,187],["v","Ramalhal",18115,6333,187],["mar","Oceano Atlântico",3310,3840,242],["viz","Lourinhã",11080,2790,165],["viz","Mafra",4653,18294,165]],"mer":[[[300,22000],[185,21977],[88,21912],[23,21815],[0,21700],[13,213],[110,68],[185,23],[300,0],[7904,12],[8006,65],[8080,152],[8116,260],[8116,424],[7582,2125],[7177,3066],[7103,3152],[7003,3211],[7058,3401],[7061,3492],[7021,3607],[6937,3699],[6935,3745],[7002,3853],[7020,3990],[7003,4117],[6898,4401],[6787,4560],[6412,5330],[6277,5453],[6261,5631],[6167,5919],[6045,6198],[5911,6360],[5885,6511],[5559,7221],[4985,8144],[4877,8235],[4698,8527],[4597,8614],[4623,8767],[4574,8910],[4274,9406],[4139,9559],[4077,9733],[3929,9886],[3906,9978],[4018,10234],[4032,10326],[4010,10541],[3892,10882],[3014,12244],[2987,12385],[2901,12547],[2561,12889],[2312,13324],[2122,13524],[2138,13709],[2119,13816],[2026,14000],[1885,14143],[1878,14329],[1796,14551],[1512,15049],[1501,15198],[1566,15317],[1585,15439],[1744,15644],[1784,15799],[1997,16262],[1997,16682],[2047,16808],[2062,17034],[1988,17258],[1971,17415],[1865,17701],[1959,17921],[1935,18183],[2001,18471],[2000,18560],[1842,18990],[1823,19154],[1717,19333],[1792,19542],[1775,19739],[1711,19841],[1609,19920],[1575,20141],[1336,20664],[1356,20989],[1252,21189],[1424,21531],[1426,21645],[1383,21835],[1309,21929],[1175,21994],[300,22000]]],"plages":[[[1989,17253],[2092,16995],[2047,16912],[2056,16759],[1997,16682],[2035,16679],[1997,16595],[2002,16247],[1784,15799],[1769,15665],[1585,15439],[1600,15363],[1501,15198],[1512,15049],[1788,14571],[1883,14330],[1885,14143],[2030,14003],[2145,13765],[2122,13524],[2306,13336],[2561,12889],[2894,12561],[2991,12386],[3014,12244],[3900,10873],[4012,10541],[4039,10278],[3906,9978],[3929,9886],[4087,9739],[4139,9559],[4257,9434],[4585,8892],[4652,8735],[4597,8614],[4647,8615],[4875,8238],[4963,8181],[5570,7205],[5921,6432],[5911,6360],[6040,6213],[6172,5908],[6263,5632],[6277,5453],[6392,5375],[6787,4560],[6895,4415],[7009,4106],[7035,3840],[6935,3745],[6937,3699],[6998,3691],[7011,3730],[7068,3831],[7086,3897],[7092,3966],[7071,4133],[6975,4398],[6943,4465],[6849,4594],[6473,5364],[6421,5431],[6344,5492],[6329,5649],[6232,5947],[6104,6235],[5982,6386],[5972,6471],[5950,6537],[5641,7216],[5058,8161],[4997,8234],[4928,8285],[4757,8566],[4681,8643],[4694,8731],[4688,8808],[4636,8942],[4332,9445],[4201,9595],[4168,9706],[4135,9773],[4094,9827],[3991,9922],[3980,9972],[4083,10209],[4102,10329],[4078,10559],[3966,10891],[3079,12274],[3052,12410],[2960,12584],[2913,12641],[2617,12932],[2371,13361],[2194,13550],[2208,13712],[2202,13779],[2183,13844],[2084,14039],[1954,14173],[1946,14346],[1860,14579],[1580,15070],[1572,15181],[1632,15295],[1654,15415],[1808,15614],[1835,15680],[1851,15776],[2035,16155],[2065,16247],[2068,16666],[2098,16727],[2115,16794],[2132,17036],[2118,17115],[2055,17292],[1989,17253]],[[7039,3337],[7003,3211],[7116,3151],[7220,3018],[7214,2959],[7589,2110],[7667,2095],[7280,2982],[7252,3073],[7220,3128],[7175,3182],[7086,3247],[7129,3399],[7039,3337]]],"eau":[],"falaises":[],"rios":[],"casas":[[6929,10995,3],[6864,11179,1],[7168,11012,1],[6856,10807,1],[7048,11193,1],[6623,11167,1],[6648,10821,1],[7238,10821,1],[7165,10632,1],[6748,10619,1],[6953,11377,1],[6517,11365,1],[10034,11742,0],[9922,11930,0],[10218,11749,0],[9711,11927,0],[10308,11552,0],[4884,14573,0],[4796,14381,0],[4809,14772,0],[5089,14574,0],[4997,14772,0],[10236,5880,0],[10445,5898,0],[10162,6065,0],[10336,5687,0],[10562,5709,0],[10204,16627,0],[10422,16618,0],[10008,16619,0],[10315,16813,0],[10135,16424,0],[10537,20281,0],[10652,20099,0],[10762,20288,0],[10346,20290,0],[10652,20473,0],[17425,12981,0],[17228,12995,0],[17622,13002,0],[17302,13194,0],[17724,12820,0],[15839,19352,0],[15609,19354,0],[16042,19332,0],[15941,19151,0],[15730,19168,0],[18181,5851,0],[17980,5880,0],[18083,6069,0],[17875,5689,0],[18454,6047,0],[17580,2331,0],[17366,2343,0],[17643,2531,0],[17648,2133,0],[17354,2701,0],[21780,18385,0],[21693,18579,0],[21798,18017,0],[21618,18772,0],[21483,18562,0],[13548,20110,2],[17787,16105,2],[15171,12374,2],[12459,16817,2],[18629,20796,2],[3066,12789,2],[7529,3461,2],[20598,5813,2],[16386,8391,2],[14394,4222,2],[21599,766,2],[7851,7546,2],[12994,8433,2],[10033,3536,2]],"tuk":[],"costa":true,"croquis":true,"u":150.0,"s0":0.09};
+const ZONE={"w":22000,"h":22000,"centro":[6945,11000],"lugares":[["sede","TORRES VEDRAS",6969,11770,330],["v","Ponte do Rol",10146,12215,187],["v","São Pedro da Cadeira",4953,15035,187],["v","Ventosa",10189,17259,187],["v","Freiria",10553,20736,187],["v","Turcifal",15799,19802,187],["v","Ramalhal",18095,6322,187],["mar","Oceano Atlântico",3278,3800,242],["viz","Lourinhã",11080,2790,165],["viz","Mafra",4653,18294,165]],"mer":[[[300,22000],[185,21977],[88,21912],[23,21815],[0,21700],[13,213],[110,68],[185,23],[300,0],[7904,12],[8006,65],[8080,152],[8116,260],[8116,424],[7582,2125],[7177,3066],[7103,3152],[7003,3211],[7058,3401],[7061,3492],[7021,3607],[6937,3699],[6935,3745],[7002,3853],[7020,3990],[7003,4117],[6898,4401],[6787,4560],[6412,5330],[6277,5453],[6261,5631],[6167,5919],[6045,6198],[5911,6360],[5885,6511],[5559,7221],[4985,8144],[4877,8235],[4698,8527],[4597,8614],[4623,8767],[4574,8910],[4274,9406],[4139,9559],[4077,9733],[3929,9886],[3906,9978],[4018,10234],[4032,10326],[4010,10541],[3892,10882],[3014,12244],[2987,12385],[2901,12547],[2561,12889],[2312,13324],[2122,13524],[2138,13709],[2119,13816],[2026,14000],[1885,14143],[1878,14329],[1796,14551],[1512,15049],[1501,15198],[1566,15317],[1585,15439],[1744,15644],[1784,15799],[1997,16262],[1997,16682],[2047,16808],[2062,17034],[1988,17258],[1971,17415],[1865,17701],[1959,17921],[1935,18183],[2001,18471],[2000,18560],[1842,18990],[1823,19154],[1717,19333],[1792,19542],[1775,19739],[1711,19841],[1609,19920],[1575,20141],[1336,20664],[1356,20989],[1252,21189],[1424,21531],[1426,21645],[1383,21835],[1309,21929],[1175,21994],[300,22000]]],"plages":[[[1989,17253],[2092,16995],[2047,16912],[2056,16759],[1997,16682],[2035,16679],[1997,16595],[2002,16247],[1784,15799],[1769,15665],[1585,15439],[1600,15363],[1501,15198],[1512,15049],[1788,14571],[1883,14330],[1885,14143],[2030,14003],[2145,13765],[2122,13524],[2306,13336],[2561,12889],[2894,12561],[2991,12386],[3014,12244],[3900,10873],[4012,10541],[4039,10278],[3906,9978],[3929,9886],[4087,9739],[4139,9559],[4257,9434],[4585,8892],[4652,8735],[4597,8614],[4647,8615],[4875,8238],[4963,8181],[5570,7205],[5921,6432],[5911,6360],[6040,6213],[6172,5908],[6263,5632],[6277,5453],[6392,5375],[6787,4560],[6895,4415],[7009,4106],[7035,3840],[6935,3745],[6937,3699],[6998,3691],[7011,3730],[7068,3831],[7086,3897],[7092,3966],[7071,4133],[6975,4398],[6943,4465],[6849,4594],[6473,5364],[6421,5431],[6344,5492],[6329,5649],[6232,5947],[6104,6235],[5982,6386],[5972,6471],[5950,6537],[5641,7216],[5058,8161],[4997,8234],[4928,8285],[4757,8566],[4681,8643],[4694,8731],[4688,8808],[4636,8942],[4332,9445],[4201,9595],[4168,9706],[4135,9773],[4094,9827],[3991,9922],[3980,9972],[4083,10209],[4102,10329],[4078,10559],[3966,10891],[3079,12274],[3052,12410],[2960,12584],[2913,12641],[2617,12932],[2371,13361],[2194,13550],[2208,13712],[2202,13779],[2183,13844],[2084,14039],[1954,14173],[1946,14346],[1860,14579],[1580,15070],[1572,15181],[1632,15295],[1654,15415],[1808,15614],[1835,15680],[1851,15776],[2035,16155],[2065,16247],[2068,16666],[2098,16727],[2115,16794],[2132,17036],[2118,17115],[2055,17292],[1989,17253]],[[7039,3337],[7003,3211],[7116,3151],[7220,3018],[7214,2959],[7589,2110],[7667,2095],[7280,2982],[7252,3073],[7220,3128],[7175,3182],[7086,3247],[7129,3399],[7039,3337]]],"eau":[],"falaises":[],"rios":[],"casas":[[6931,10986,3],[7146,10994,1],[6835,11173,1],[7142,11360,1],[6740,10634,1],[6517,11018,1],[7147,10646,1],[6647,10830,1],[7473,10817,1],[6965,10648,1],[7365,10999,1],[6723,11384,1],[10104,11579,0],[10238,11768,0],[10126,11951,0],[9926,11948,0],[10334,11560,0],[4707,14571,0],[5085,14558,0],[4771,14378,0],[5007,14771,0],[5194,14374,0],[10365,5703,0],[10160,5704,0],[10365,6059,0],[9958,6087,0],[10040,5522,0],[10195,16631,0],[10100,16450,0],[10441,16626,0],[9994,16639,0],[10216,16995,0],[10551,20275,0],[10641,20472,0],[10741,20274,0],[10261,20107,0],[10570,19923,0],[17603,12981,0],[17208,12990,0],[17505,13181,0],[17534,12799,0],[17330,12799,0],[15712,19151,0],[15934,19538,0],[15712,19527,0],[15526,19531,0],[16111,19159,0],[17969,5862,0],[18391,5883,0],[18281,5696,0],[17982,5506,0],[17851,6058,0],[17352,2348,0],[17464,2153,0],[17744,2345,0],[17365,2715,0],[17878,2150,0],[21687,18192,0],[21713,18585,0],[21482,18190,0],[21475,18581,0],[21503,17824,0],[20598,5813,2],[17503,16217,2],[16386,8391,2],[12847,15504,2],[14500,12261,2],[14394,4222,2],[21599,766,2],[7851,7546,2],[12994,8433,2],[6914,4639,2],[10033,3536,2],[21099,15363,2],[10681,14065,2],[19407,19649,2]],"tuk":[],"costa":true,"croquis":true,"u":150.0,"s0":0.09};
 const FORM_URL="https://script.google.com/macros/s/AKfycbxwnyOWuOgnQ2B0Tt80EEkKIetwzZYKj0BX6JDREwDRHdlRyLzmVsHvYoOz5avhBOp8Kw/exec";
 /* ---------- medição (só com consentimento) ---------- */
 const M=(function(){
@@ -462,7 +468,7 @@ for(const[k,n,x,y,t,a]of ZONE.lugares){if(!t)continue;const e=el("text",{x,y,cla
 /* ---------- maisons dessinées, en grappes ---------- */
 const casas=[];
 const NOMES=["Casa do Sol","Ocean View T2 (vista parcial)","Blue Door Apartment","Vila Gaivota","Sunny Retreat","Casa da Avó Lurdes","Golden Coast Loft","Monte da Paz (com galo)","Cantinho do Sossego","Sea Breeze T1","Suites do Chefe","Casa Azulejo"];
-const TELHAS=["#c9603a","#c9603a","#b9532f","#d4703f","#2f6f9a"];
+const TELHAS=["#e4572e","#e4572e","#d9482b","#f28c38","#2f7fc1"];
 function casa(x,y,o){
   o=o||{};const monte=o.t===2;
   if(o.t===3){const w=U*1.05,h=w*.7,e=g({class:"casa",transform:`translate(${f1(x)},${f1(y)})`},camadaCasas);
@@ -477,7 +483,7 @@ function casa(x,y,o){
   const cor=monte?"#c9603a":pick(TELHAS),tp=-h/2,r=w*(monte?.22:.42);
   const e=g({class:"casa",transform:`translate(${f1(x)},${f1(y)}) rotate(${f1(a)})`},camadaCasas);
   const i=g(o.pop?{class:"pop"}:{},e);
-  el("path",{class:"tr",d:`M${f1(-w/2)},${f1(tp)}h${f1(w)}v${f1(h)}h${f1(-w)}z`,fill:"#fbf7ee"},i);
+  el("path",{class:"tr",d:`M${f1(-w/2)},${f1(tp)}h${f1(w)}v${f1(h)}h${f1(-w)}z`,fill:"#fff"},i);
   el("path",{class:"tecto tr",fill:cor,d:`M${f1(-w/2-w*.07)},${f1(tp)}L${f1(monte?-w*.3:0)},${f1(tp-r)}${monte?`L${f1(w*.3)},${f1(tp-r)}`:""}L${f1(w/2+w*.07)},${f1(tp)}z`},i);
   el("rect",{x:f1(-w*.09),y:f1(h/2-h*.5),width:f1(w*.18),height:f1(h*.5),fill:"#2e3b45"},i);
   el("rect",{class:"tr",x:f1(w*.2),y:f1(tp+h*.22),width:f1(w*.17),height:f1(w*.15),fill:"#9fd4e3"},i);
@@ -599,5 +605,6 @@ if(DATA){
 }
 })();
 </script>
+<script>(()=>{const F=["com hóspedes a perguntar pelo wifi.", "com alguém a chegar às 3h da manhã.", "com malas de rodas na calçada.", "com uma chave que não abre.", "com um check-out às 18h.", "com uma sogra a dormir no sofá.", "com um vizinho a contar as malas."],e=document.getElementById('roda');if(!e||matchMedia('(prefers-reduced-motion: reduce)').matches)return;let i=0;setInterval(()=>{e.classList.add('sai');setTimeout(()=>{i=(i+1)%F.length;e.textContent=F[i];e.classList.remove('sai')},350)},3200)})()</script>
 </body>
 </html>

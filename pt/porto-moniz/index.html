@@ -38,7 +38,7 @@ a{color:inherit}
 .hero{position:relative;min-height:100vh;min-height:100svh;overflow:hidden;background:var(--mar)}
 #mapa{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none}
 #mapa.glisse{cursor:grabbing}
-.voile{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(247,242,232,.94) 0,rgba(247,242,232,.82) 34%,rgba(247,242,232,0) 58%);transition:opacity .5s}
+.voile{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(255,255,255,.93) 0,rgba(255,255,255,.8) 34%,rgba(255,255,255,0) 58%);transition:opacity .5s}
 .nav{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:18px 0;pointer-events:none}
 .nav>*{pointer-events:auto}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-stretch:112%;font-size:22px;letter-spacing:-.01em}
@@ -78,7 +78,7 @@ a{color:inherit}
 
 /* CARTE DESSINEE */
 #mapa{background:#b8dce3}
-.papel{position:absolute;inset:0;pointer-events:none;opacity:.55;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .42 0 0 0 0 .35 0 0 0 0 .22 0 0 0 .22 0'/></filter><rect width='260' height='260' filter='url(%23n)'/></svg>")}
+.papel{position:absolute;inset:0;pointer-events:none;opacity:.12;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .42 0 0 0 0 .35 0 0 0 0 .22 0 0 0 .22 0'/></filter><rect width='260' height='260' filter='url(%23n)'/></svg>")}
 #base path,#base use{fill:none;stroke-linecap:round;stroke-linejoin:round}
 #base .mer2{fill:#a8d3dc}#base .mer3{fill:#99c9d3}
 #base .terre{fill:#f5edd8;stroke:#2e3b45;stroke-width:2.6}
@@ -110,29 +110,29 @@ a{color:inherit}
 .nome{font-family:"Shantell Sans","Comic Neue",sans-serif;font-weight:700;fill:#26323b;paint-order:stroke;stroke:#f5edd8;stroke-width:7px;stroke-linejoin:round;text-anchor:middle;pointer-events:none;letter-spacing:.03em}
 .n-neighbourhood,.n-hamlet{font-weight:500;opacity:.7}
 .n-cape{font-style:italic;font-weight:500;fill:#24586b;stroke:#b8dce3}
-#mapa{background:#f4ead0}
-#base .k-mar{fill:#d7e7e4}
-#base .k-eco{fill:none;stroke:#6f9fb0;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-dasharray:7 8;stroke-linecap:round;opacity:.75}
-#base .k-eco2{opacity:.4}
-#base .k-onda{fill:none;stroke:#5b8fa3;stroke-width:1.8px;vector-effect:non-scaling-stroke;stroke-linecap:round}
-#base .k-terra{fill:#f4ead0}
+#mapa{background:#d4ecae}
+#base .k-mar{fill:#8fd6ea}
+#base .k-eco{fill:none;stroke:#fff;stroke-width:1.6px;vector-effect:non-scaling-stroke;stroke-dasharray:8 9;stroke-linecap:round;opacity:.85}
+#base .k-eco2{opacity:.5}
+#base .k-onda{fill:none;stroke:#fff;stroke-width:2.2px;vector-effect:non-scaling-stroke;stroke-linecap:round}
+#base .k-terra{fill:#d4ecae}
 #base .k-fora{fill:url(#pFora)}
-#base .k-praia{fill:#f2d891}
-#base .k-lago{fill:#c3dde2;stroke:#4f8aa0;stroke-width:1.6px;vector-effect:non-scaling-stroke}
-#base .k-rio{fill:none;stroke:#5a9bb4;stroke-width:3.4px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
-#base .k-est1{fill:none;stroke:#9a6b3c;stroke-width:3px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
-#base .k-est2{fill:none;stroke:#b58a57;stroke-width:2px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
-#base .k-cam{fill:none;stroke:#a5875c;stroke-width:2.2px;vector-effect:non-scaling-stroke;stroke-dasharray:1 8;stroke-linecap:round}
+#base .k-praia{fill:#ffe08a}
+#base .k-lago{fill:#8fd6ea;stroke:#3a9cc4;stroke-width:1.8px;vector-effect:non-scaling-stroke}
+#base .k-rio{fill:none;stroke:#3fa9d6;stroke-width:3.6px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
+#base .k-rua-c{fill:none;stroke:#2e3b45;stroke-width:5.5px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
+#base .k-rua{fill:none;stroke:#ffd84d;stroke-width:3px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
 #base .k-costa{fill:none;stroke:#2e3b45;stroke-width:2.4px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
-#base .k-lim{fill:none;stroke:#c4572f;stroke-width:2.4px;vector-effect:non-scaling-stroke;stroke-dasharray:1 8;stroke-linecap:round}
-#base .k-tronco{stroke:#6b4f33;stroke-width:1.6px;vector-effect:non-scaling-stroke}
-#base .k-arv{fill:#a5b86e;stroke:#3f4e28;stroke-width:1.3px;vector-effect:non-scaling-stroke}
-#base .k-pinho{fill:#80995a;stroke:#3f4e28;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+#base .k-lim{fill:none;stroke:#e2477a;stroke-width:2.6px;vector-effect:non-scaling-stroke;stroke-dasharray:1 8;stroke-linecap:round}
+#base .k-bosque{fill:#b6dd86}
+#base .k-tronco{stroke:#7a5233;stroke-width:1.6px;vector-effect:non-scaling-stroke}
+#base .k-arv{fill:#6cc04a;stroke:#2f6b2a;stroke-width:1.3px;vector-effect:non-scaling-stroke}
+#base .k-pinho{fill:#3f9a4a;stroke:#2f6b2a;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
 .tr{stroke:#2e3b45;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
-.nm{font-family:"Shantell Sans","Comic Neue",sans-serif;font-weight:700;fill:#26323b;paint-order:stroke;stroke:#f4ead0;stroke-linejoin:round;text-anchor:middle;pointer-events:none;letter-spacing:.02em}
+.nm{font-family:"Shantell Sans","Comic Neue",sans-serif;font-weight:700;fill:#26323b;paint-order:stroke;stroke:#fff;stroke-linejoin:round;text-anchor:middle;pointer-events:none;letter-spacing:.02em}
 .nm-sede{letter-spacing:.07em}
-.nm-viz{fill:#8d8068;font-weight:500;font-style:italic;stroke:none;letter-spacing:.09em}
-.nm-mar,.nm-rio{fill:#3d7c93;font-style:italic;font-weight:500;stroke:none;letter-spacing:.12em}
+.nm-viz{fill:#5f7a4a;font-weight:500;font-style:italic;stroke:none;letter-spacing:.09em}
+.nm-mar,.nm-rio{fill:#1f6f99;font-style:italic;font-weight:500;stroke:none;letter-spacing:.12em}
 .escala{display:none}
 .fala-t{font-family:"Shantell Sans",sans-serif;font-size:15px;font-weight:700}
 .zoom{position:absolute;right:18px;bottom:46px;z-index:3;display:flex;flex-direction:column;gap:6px}
@@ -232,6 +232,12 @@ footer a{color:var(--amarelo)}
 .med div{display:flex;gap:10px;justify-content:flex-end}
 .med button{font:inherit;font-weight:700;padding:8px 18px;border-radius:8px;border:2px solid #2e3b45;background:#f7f2e8;color:#18222b;cursor:pointer}
 </style>
+<style>
+h1 .roda-w{display:block;font-size:.6em;line-height:1.12;min-height:2.3em;margin-top:.25em}
+#roda{transition:opacity .35s}
+#roda.sai{opacity:0}
+@media (prefers-reduced-motion:reduce){#roda{transition:none}}
+</style>
 </head>
 <body>
 
@@ -243,7 +249,7 @@ footer a{color:var(--amarelo)}
       <pattern id="pMato" width="44" height="44" patternUnits="userSpaceOnUse"><rect width="44" height="44" fill="#d9ddaa"/><path d="M5 13c3-6 8-6 10 0M24 33c3-6 8-6 10 0M28 10c2-4 6-4 8 0M6 35c2-4 6-4 8 0" fill="none" stroke="#5f6c33" stroke-width="1.6" stroke-linecap="round"/></pattern>
       <pattern id="pUrb" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><rect width="16" height="16" fill="#f0e2c9"/><path d="M0 8h16" stroke="#d6bc96" stroke-width="1.3"/></pattern>
       <pattern id="pAreia" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#f4e0ab"/><circle cx="4" cy="5" r="1.1" fill="#c09a52"/><circle cx="12" cy="11" r="1.1" fill="#c09a52"/><circle cx="10" cy="2" r=".8" fill="#c09a52"/></pattern>
-      <pattern id="pFora" width="300" height="300" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><rect width="300" height="300" fill="#ece3cb"/><path d="M0 150h300" stroke="#d8cdb0" stroke-width="22"/></pattern>
+      <pattern id="pFora" width="300" height="300" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><rect width="300" height="300" fill="#e7f3d6"/><path d="M0 150h300" stroke="#d3e8bc" stroke-width="22"/></pattern>
       <pattern id="pPaul" width="26" height="18" patternUnits="userSpaceOnUse"><rect width="26" height="18" fill="#d3e6de"/><path d="M3 8h8M15 14h8M16 3h5" stroke="#5e9fb0" stroke-width="1.5" stroke-linecap="round"/></pattern>
     </defs>
     <g id="mundo"><g id="base"></g></g>
@@ -262,7 +268,7 @@ footer a{color:var(--amarelo)}
       </nav>
     </div>
     <div class="accroche">
-      <h1><span class="sobre">Gestão de alojamento local no Porto Moniz · 260 AL no RNAL</span>O seu AL a render.<br><em>Sem</em> lhe tirar as noites.</h1>
+      <h1><span class="sobre">Gestão de alojamento local no Porto Moniz</span>260 AL no Porto Moniz.<span class="roda-w"><em>Todos</em> <span id="roda">com hóspedes a perguntar pelo wifi.</span></span></h1>
       <p class="gratis">Pedido de contacto gratuito</p>
       <ul class="servs"><li>Reservas e preços</li><li>Hóspedes 24h</li><li>Limpeza e roupa</li><li>Avarias</li><li>Prazos legais</li><li>Contas claras</li></ul>
 <form class="contacto" id="f-contacto" novalidate>
@@ -389,7 +395,7 @@ footer a{color:var(--amarelo)}
 
 <script>
 const DATA={"concelho":"Porto Moniz","data_ref":"2026-11-08","data_ref_pt":"8 de novembro de 2026","total":260,"novos180":32,"mod":{"M":175,"E":15,"A":59,"Q":9,"H":2},"freguesias":["Achadas da Cruz","Porto Moniz","Ribeira da Janela","Seixal"],"freg_tot":[["Porto Moniz",154],["Seixal",60],["Ribeira da Janela",26],["Achadas da Cruz",20]],"anos":[["<2008",11],["2012",1],["2015",1],["2016",10],["2017",12],["2018",8],["2019",8],["2020",10],["2021",13],["2022",13],["2023",35],["2024",53],["2025",40],["2026",45]],"conc_em":"no Porto Moniz","conc_de":"do Porto Moniz","conc_em_m":"No Porto Moniz","rnal_url":"/pt/porto-moniz/rnal.json"};
-const ZONE={"w":18449,"h":14443,"centro":[6202,5153],"lugares":[["sede","PORTO MONIZ",6196,5730,330],["v","Achadas da Cruz",3242,5230,187],["v","Ribeira da Janela",8515,8483,187],["v","Seixal",13062,9416,187],["mar","Oceano Atlântico",13590,3073,242],["viz","Calheta",4080,9315,165]],"mer":[[[448,5552],[305,5591],[162,5558],[52,5460],[0,5291],[0,300],[13,213],[68,110],[213,13],[18149,0],[18316,51],[18399,133],[18436,213],[18449,8029],[18426,8146],[18379,8222],[18229,8318],[18080,8321],[17486,8179],[16388,7741],[16095,7769],[15970,7710],[15809,7702],[15638,7611],[15230,7500],[14933,7506],[14691,7600],[14414,7601],[14332,7582],[14069,7365],[14028,7284],[14014,7170],[13843,7193],[13760,7167],[13667,7098],[13619,7026],[13590,6887],[13526,6765],[13520,6620],[13416,6547],[13354,6468],[13135,6328],[13040,6222],[12954,6266],[12840,6279],[12729,6249],[12658,6199],[12551,6247],[12339,6278],[12232,6369],[12093,6407],[11876,6348],[11586,6351],[11360,6259],[11022,5957],[10635,5732],[10311,5410],[10139,4997],[9943,4800],[9888,4611],[9158,4120],[9073,4033],[9015,3870],[9041,3520],[8943,3267],[8968,3125],[9045,3021],[9017,2974],[8948,2990],[8797,3082],[8711,3091],[8600,3064],[8319,2904],[8176,2738],[7958,2635],[7728,2419],[7670,2253],[7689,2136],[7740,2049],[7694,1935],[7694,1815],[7761,1680],[7881,1589],[7617,1520],[7543,1654],[7416,1733],[7266,1740],[7065,1677],[6935,1777],[6689,1815],[6541,1909],[6430,1933],[6317,1914],[5422,1581],[4903,1501],[4682,1555],[4319,1772],[4099,2012],[3866,2479],[3603,2822],[3453,2925],[3140,3009],[3012,3102],[2815,3454],[2548,3689],[2512,3836],[2450,3941],[2139,4140],[1498,4866],[981,5248],[448,5552]]],"plages":[[[2138,4140],[2491,3933],[2548,3689],[2819,3458],[3012,3102],[3140,3009],[3456,2930],[3617,2814],[3867,2480],[4099,2012],[4319,1772],[4683,1555],[4903,1501],[5422,1581],[6403,1946],[6520,1930],[6689,1815],[6971,1785],[7065,1677],[7160,1696],[7173,1783],[7133,1761],[7090,1753],[7025,1808],[6958,1843],[6892,1862],[6714,1882],[6565,1974],[6470,2000],[6399,2002],[6293,1980],[5408,1649],[4906,1572],[4713,1618],[4364,1826],[4155,2055],[3924,2519],[3652,2872],[3486,2987],[3170,3073],[3065,3149],[2871,3496],[2610,3727],[2566,3890],[2504,3985],[2417,4057],[2186,4191],[1534,4928],[1500,4867],[2138,4140]],[[7621,1520],[7877,1588],[7881,1589],[7755,1667],[7699,1645],[7722,1619],[7661,1603],[7652,1622],[7621,1520]],[[7738,2045],[7630,1967],[7619,1862],[7644,1873],[7738,2045]],[[7723,2423],[7970,2648],[8176,2738],[8291,2889],[8762,3159],[8642,3152],[8540,3112],[8275,2958],[8219,2908],[8132,2795],[7984,2731],[7914,2690],[7720,2515],[7669,2458],[7619,2360],[7600,2231],[7723,2423]],[[8951,2989],[9017,2974],[9045,3021],[8958,3066],[8951,2989]],[[9039,3516],[9009,3884],[9079,4067],[9888,4611],[9930,4808],[10137,4994],[10240,5202],[10199,5275],[10268,5369],[10643,5742],[11022,5957],[11357,6263],[11585,6358],[11876,6348],[12173,6461],[12247,6440],[12163,6469],[12063,6476],[11985,6463],[11865,6418],[11616,6425],[11497,6397],[11319,6316],[10978,6011],[10642,5822],[10568,5766],[10235,5425],[10190,5333],[10172,5221],[10081,5037],[9954,4923],[9902,4865],[9852,4767],[9826,4653],[9116,4176],[9058,4127],[9016,4074],[8968,3972],[8945,3874],[8969,3533],[8885,3346],[8873,3222],[8904,3240],[9039,3516]],[[12335,6281],[12319,6323],[12448,6252],[12404,6317],[12410,6338],[12370,6345],[12278,6422],[12296,6322],[12335,6281]],[[12635,6292],[12659,6200],[12755,6334],[12652,6284],[12635,6292]],[[13034,6226],[13043,6225],[13113,6312],[13060,6354],[13053,6347],[13059,6287],[13034,6226]],[[13164,6348],[13213,6383],[13217,6478],[13086,6378],[13164,6348]],[[13354,6468],[13363,6521],[13320,6544],[13306,6525],[13354,6468]],[[13520,6621],[13472,6679],[13515,6696],[13494,6759],[13590,6886],[13475,6831],[13457,6780],[13453,6761],[13500,6706],[13446,6711],[13444,6653],[13487,6596],[13460,6669],[13520,6621]],[[13943,7263],[14014,7174],[14015,7410],[13974,7337],[13951,7262],[13943,7263]],[[14157,7448],[14324,7603],[14724,7602],[14933,7506],[15230,7500],[15641,7612],[15886,7753],[15970,7710],[16044,7801],[16388,7741],[16942,7948],[16949,8010],[16938,8022],[16377,7811],[16149,7845],[16049,7829],[15953,7783],[15894,7787],[15820,7777],[15749,7753],[15614,7677],[15217,7569],[14949,7575],[14779,7652],[14702,7669],[14443,7673],[14370,7666],[14278,7634],[14218,7598],[14064,7465],[14017,7412],[14157,7448]],[[13726,7229],[13643,7173],[13591,7115],[13619,7110],[13725,7186],[13726,7229]],[[7664,1698],[7683,1667],[7710,1675],[7719,1729],[7664,1698]],[[7547,1743],[7475,1785],[7423,1803],[7519,1716],[7547,1743]],[[7381,1812],[7293,1815],[7238,1805],[7301,1773],[7381,1812]]],"eau":[],"falaises":[],"rios":[],"casas":[[6209,5149,3],[6112,4954,1],[6008,5147,1],[6084,5341,1],[6317,5337,1],[5893,5329,1],[6486,4964,1],[6512,5345,1],[6628,5155,1],[5700,5345,1],[6624,4776,1],[5773,4772,1],[3322,4763,0],[3121,4753,0],[3525,4757,0],[3223,4966,0],[3021,4938,0],[8510,8018,0],[8701,8018,0],[8632,8215,0],[8306,8010,0],[8425,8219,0],[13078,8787,0],[13287,8773,0],[12886,8785,0],[12977,8596,0],[13083,9152,0],[6914,2434,2],[8800,3972,2],[11360,12282,2],[4154,2609,2],[9277,10165,2]],"tuk":[],"costa":true,"croquis":true,"u":150.0,"s0":0.09};
+const ZONE={"w":18449,"h":14443,"centro":[6202,5153],"lugares":[["sede","PORTO MONIZ",6143,5910,330],["v","Achadas da Cruz",3391,5389,187],["v","Ribeira da Janela",8522,8474,187],["v","Seixal",13005,9410,187],["mar","Oceano Atlântico",15110,3327,242],["viz","Calheta",4080,9315,165]],"mer":[[[448,5552],[305,5591],[162,5558],[52,5460],[0,5291],[0,300],[13,213],[68,110],[213,13],[18149,0],[18316,51],[18399,133],[18436,213],[18449,8029],[18426,8146],[18379,8222],[18229,8318],[18080,8321],[17486,8179],[16388,7741],[16095,7769],[15970,7710],[15809,7702],[15638,7611],[15230,7500],[14933,7506],[14691,7600],[14414,7601],[14332,7582],[14069,7365],[14028,7284],[14014,7170],[13843,7193],[13760,7167],[13667,7098],[13619,7026],[13590,6887],[13526,6765],[13520,6620],[13416,6547],[13354,6468],[13135,6328],[13040,6222],[12954,6266],[12840,6279],[12729,6249],[12658,6199],[12551,6247],[12339,6278],[12232,6369],[12093,6407],[11876,6348],[11586,6351],[11360,6259],[11022,5957],[10635,5732],[10311,5410],[10139,4997],[9943,4800],[9888,4611],[9158,4120],[9073,4033],[9015,3870],[9041,3520],[8943,3267],[8968,3125],[9045,3021],[9017,2974],[8948,2990],[8797,3082],[8711,3091],[8600,3064],[8319,2904],[8176,2738],[7958,2635],[7728,2419],[7670,2253],[7689,2136],[7740,2049],[7694,1935],[7694,1815],[7761,1680],[7881,1589],[7617,1520],[7543,1654],[7416,1733],[7266,1740],[7065,1677],[6935,1777],[6689,1815],[6541,1909],[6430,1933],[6317,1914],[5422,1581],[4903,1501],[4682,1555],[4319,1772],[4099,2012],[3866,2479],[3603,2822],[3453,2925],[3140,3009],[3012,3102],[2815,3454],[2548,3689],[2512,3836],[2450,3941],[2139,4140],[1498,4866],[981,5248],[448,5552]]],"plages":[[[2138,4140],[2491,3933],[2548,3689],[2819,3458],[3012,3102],[3140,3009],[3456,2930],[3617,2814],[3867,2480],[4099,2012],[4319,1772],[4683,1555],[4903,1501],[5422,1581],[6403,1946],[6520,1930],[6689,1815],[6971,1785],[7065,1677],[7160,1696],[7173,1783],[7133,1761],[7090,1753],[7025,1808],[6958,1843],[6892,1862],[6714,1882],[6565,1974],[6470,2000],[6399,2002],[6293,1980],[5408,1649],[4906,1572],[4713,1618],[4364,1826],[4155,2055],[3924,2519],[3652,2872],[3486,2987],[3170,3073],[3065,3149],[2871,3496],[2610,3727],[2566,3890],[2504,3985],[2417,4057],[2186,4191],[1534,4928],[1500,4867],[2138,4140]],[[7621,1520],[7877,1588],[7881,1589],[7755,1667],[7699,1645],[7722,1619],[7661,1603],[7652,1622],[7621,1520]],[[7738,2045],[7630,1967],[7619,1862],[7644,1873],[7738,2045]],[[7723,2423],[7970,2648],[8176,2738],[8291,2889],[8762,3159],[8642,3152],[8540,3112],[8275,2958],[8219,2908],[8132,2795],[7984,2731],[7914,2690],[7720,2515],[7669,2458],[7619,2360],[7600,2231],[7723,2423]],[[8951,2989],[9017,2974],[9045,3021],[8958,3066],[8951,2989]],[[9039,3516],[9009,3884],[9079,4067],[9888,4611],[9930,4808],[10137,4994],[10240,5202],[10199,5275],[10268,5369],[10643,5742],[11022,5957],[11357,6263],[11585,6358],[11876,6348],[12173,6461],[12247,6440],[12163,6469],[12063,6476],[11985,6463],[11865,6418],[11616,6425],[11497,6397],[11319,6316],[10978,6011],[10642,5822],[10568,5766],[10235,5425],[10190,5333],[10172,5221],[10081,5037],[9954,4923],[9902,4865],[9852,4767],[9826,4653],[9116,4176],[9058,4127],[9016,4074],[8968,3972],[8945,3874],[8969,3533],[8885,3346],[8873,3222],[8904,3240],[9039,3516]],[[12335,6281],[12319,6323],[12448,6252],[12404,6317],[12410,6338],[12370,6345],[12278,6422],[12296,6322],[12335,6281]],[[12635,6292],[12659,6200],[12755,6334],[12652,6284],[12635,6292]],[[13034,6226],[13043,6225],[13113,6312],[13060,6354],[13053,6347],[13059,6287],[13034,6226]],[[13164,6348],[13213,6383],[13217,6478],[13086,6378],[13164,6348]],[[13354,6468],[13363,6521],[13320,6544],[13306,6525],[13354,6468]],[[13520,6621],[13472,6679],[13515,6696],[13494,6759],[13590,6886],[13475,6831],[13457,6780],[13453,6761],[13500,6706],[13446,6711],[13444,6653],[13487,6596],[13460,6669],[13520,6621]],[[13943,7263],[14014,7174],[14015,7410],[13974,7337],[13951,7262],[13943,7263]],[[14157,7448],[14324,7603],[14724,7602],[14933,7506],[15230,7500],[15641,7612],[15886,7753],[15970,7710],[16044,7801],[16388,7741],[16942,7948],[16949,8010],[16938,8022],[16377,7811],[16149,7845],[16049,7829],[15953,7783],[15894,7787],[15820,7777],[15749,7753],[15614,7677],[15217,7569],[14949,7575],[14779,7652],[14702,7669],[14443,7673],[14370,7666],[14278,7634],[14218,7598],[14064,7465],[14017,7412],[14157,7448]],[[13726,7229],[13643,7173],[13591,7115],[13619,7110],[13725,7186],[13726,7229]],[[7664,1698],[7683,1667],[7710,1675],[7719,1729],[7664,1698]],[[7547,1743],[7475,1785],[7423,1803],[7519,1716],[7547,1743]],[[7381,1812],[7293,1815],[7238,1805],[7301,1773],[7381,1812]]],"eau":[],"falaises":[],"rios":[],"casas":[[6220,5155,3],[6409,5146,1],[6078,4964,1],[6320,4954,1],[5909,5337,1],[6199,5503,1],[5893,4978,1],[6696,5329,1],[5704,4954,1],[6013,5524,1],[6602,5144,1],[5676,5341,1],[3394,4579,0],[3117,4757,0],[3426,4944,0],[3308,5125,0],[3709,4752,0],[8518,8017,0],[8596,8210,0],[8406,7829,0],[8293,8018,0],[8797,7829,0],[13018,8956,0],[13316,8754,0],[13002,8587,0],[12777,8595,0],[12911,9146,0],[8800,3972,2],[11360,12282,2],[4154,2609,2],[9277,10165,2],[11138,9964,2]],"tuk":[],"costa":true,"croquis":true,"u":150.0,"s0":0.09};
 const FORM_URL="https://script.google.com/macros/s/AKfycbxwnyOWuOgnQ2B0Tt80EEkKIetwzZYKj0BX6JDREwDRHdlRyLzmVsHvYoOz5avhBOp8Kw/exec";
 /* ---------- medição (só com consentimento) ---------- */
 const M=(function(){
@@ -462,7 +468,7 @@ for(const[k,n,x,y,t,a]of ZONE.lugares){if(!t)continue;const e=el("text",{x,y,cla
 /* ---------- maisons dessinées, en grappes ---------- */
 const casas=[];
 const NOMES=["Casa do Sol","Ocean View T2 (vista parcial)","Blue Door Apartment","Vila Gaivota","Sunny Retreat","Casa da Avó Lurdes","Golden Coast Loft","Monte da Paz (com galo)","Cantinho do Sossego","Sea Breeze T1","Suites do Chefe","Casa Azulejo"];
-const TELHAS=["#c9603a","#c9603a","#b9532f","#d4703f","#2f6f9a"];
+const TELHAS=["#e4572e","#e4572e","#d9482b","#f28c38","#2f7fc1"];
 function casa(x,y,o){
   o=o||{};const monte=o.t===2;
   if(o.t===3){const w=U*1.05,h=w*.7,e=g({class:"casa",transform:`translate(${f1(x)},${f1(y)})`},camadaCasas);
@@ -477,7 +483,7 @@ function casa(x,y,o){
   const cor=monte?"#c9603a":pick(TELHAS),tp=-h/2,r=w*(monte?.22:.42);
   const e=g({class:"casa",transform:`translate(${f1(x)},${f1(y)}) rotate(${f1(a)})`},camadaCasas);
   const i=g(o.pop?{class:"pop"}:{},e);
-  el("path",{class:"tr",d:`M${f1(-w/2)},${f1(tp)}h${f1(w)}v${f1(h)}h${f1(-w)}z`,fill:"#fbf7ee"},i);
+  el("path",{class:"tr",d:`M${f1(-w/2)},${f1(tp)}h${f1(w)}v${f1(h)}h${f1(-w)}z`,fill:"#fff"},i);
   el("path",{class:"tecto tr",fill:cor,d:`M${f1(-w/2-w*.07)},${f1(tp)}L${f1(monte?-w*.3:0)},${f1(tp-r)}${monte?`L${f1(w*.3)},${f1(tp-r)}`:""}L${f1(w/2+w*.07)},${f1(tp)}z`},i);
   el("rect",{x:f1(-w*.09),y:f1(h/2-h*.5),width:f1(w*.18),height:f1(h*.5),fill:"#2e3b45"},i);
   el("rect",{class:"tr",x:f1(w*.2),y:f1(tp+h*.22),width:f1(w*.17),height:f1(w*.15),fill:"#9fd4e3"},i);
@@ -599,5 +605,6 @@ if(DATA){
 }
 })();
 </script>
+<script>(()=>{const F=["com hóspedes a perguntar pelo wifi.", "com alguém a chegar às 3h da manhã.", "com malas de rodas na calçada.", "com uma chave que não abre.", "com um check-out às 18h.", "com uma sogra a dormir no sofá.", "com um vizinho a contar as malas."],e=document.getElementById('roda');if(!e||matchMedia('(prefers-reduced-motion: reduce)').matches)return;let i=0;setInterval(()=>{e.classList.add('sai');setTimeout(()=>{i=(i+1)%F.length;e.textContent=F[i];e.classList.remove('sai')},350)},3200)})()</script>
 </body>
 </html>

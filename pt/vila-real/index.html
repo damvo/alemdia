@@ -38,7 +38,7 @@ a{color:inherit}
 .hero{position:relative;min-height:100vh;min-height:100svh;overflow:hidden;background:var(--mar)}
 #mapa{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none}
 #mapa.glisse{cursor:grabbing}
-.voile{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(247,242,232,.94) 0,rgba(247,242,232,.82) 34%,rgba(247,242,232,0) 58%);transition:opacity .5s}
+.voile{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(255,255,255,.93) 0,rgba(255,255,255,.8) 34%,rgba(255,255,255,0) 58%);transition:opacity .5s}
 .nav{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:18px 0;pointer-events:none}
 .nav>*{pointer-events:auto}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-stretch:112%;font-size:22px;letter-spacing:-.01em}
@@ -78,7 +78,7 @@ a{color:inherit}
 
 /* CARTE DESSINEE */
 #mapa{background:#b8dce3}
-.papel{position:absolute;inset:0;pointer-events:none;opacity:.55;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .42 0 0 0 0 .35 0 0 0 0 .22 0 0 0 .22 0'/></filter><rect width='260' height='260' filter='url(%23n)'/></svg>")}
+.papel{position:absolute;inset:0;pointer-events:none;opacity:.12;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .42 0 0 0 0 .35 0 0 0 0 .22 0 0 0 .22 0'/></filter><rect width='260' height='260' filter='url(%23n)'/></svg>")}
 #base path,#base use{fill:none;stroke-linecap:round;stroke-linejoin:round}
 #base .mer2{fill:#a8d3dc}#base .mer3{fill:#99c9d3}
 #base .terre{fill:#f5edd8;stroke:#2e3b45;stroke-width:2.6}
@@ -110,29 +110,29 @@ a{color:inherit}
 .nome{font-family:"Shantell Sans","Comic Neue",sans-serif;font-weight:700;fill:#26323b;paint-order:stroke;stroke:#f5edd8;stroke-width:7px;stroke-linejoin:round;text-anchor:middle;pointer-events:none;letter-spacing:.03em}
 .n-neighbourhood,.n-hamlet{font-weight:500;opacity:.7}
 .n-cape{font-style:italic;font-weight:500;fill:#24586b;stroke:#b8dce3}
-#mapa{background:#f4ead0}
-#base .k-mar{fill:#d7e7e4}
-#base .k-eco{fill:none;stroke:#6f9fb0;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-dasharray:7 8;stroke-linecap:round;opacity:.75}
-#base .k-eco2{opacity:.4}
-#base .k-onda{fill:none;stroke:#5b8fa3;stroke-width:1.8px;vector-effect:non-scaling-stroke;stroke-linecap:round}
-#base .k-terra{fill:#f4ead0}
+#mapa{background:#d4ecae}
+#base .k-mar{fill:#8fd6ea}
+#base .k-eco{fill:none;stroke:#fff;stroke-width:1.6px;vector-effect:non-scaling-stroke;stroke-dasharray:8 9;stroke-linecap:round;opacity:.85}
+#base .k-eco2{opacity:.5}
+#base .k-onda{fill:none;stroke:#fff;stroke-width:2.2px;vector-effect:non-scaling-stroke;stroke-linecap:round}
+#base .k-terra{fill:#d4ecae}
 #base .k-fora{fill:url(#pFora)}
-#base .k-praia{fill:#f2d891}
-#base .k-lago{fill:#c3dde2;stroke:#4f8aa0;stroke-width:1.6px;vector-effect:non-scaling-stroke}
-#base .k-rio{fill:none;stroke:#5a9bb4;stroke-width:3.4px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
-#base .k-est1{fill:none;stroke:#9a6b3c;stroke-width:3px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
-#base .k-est2{fill:none;stroke:#b58a57;stroke-width:2px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
-#base .k-cam{fill:none;stroke:#a5875c;stroke-width:2.2px;vector-effect:non-scaling-stroke;stroke-dasharray:1 8;stroke-linecap:round}
+#base .k-praia{fill:#ffe08a}
+#base .k-lago{fill:#8fd6ea;stroke:#3a9cc4;stroke-width:1.8px;vector-effect:non-scaling-stroke}
+#base .k-rio{fill:none;stroke:#3fa9d6;stroke-width:3.6px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
+#base .k-rua-c{fill:none;stroke:#2e3b45;stroke-width:5.5px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
+#base .k-rua{fill:none;stroke:#ffd84d;stroke-width:3px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
 #base .k-costa{fill:none;stroke:#2e3b45;stroke-width:2.4px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
-#base .k-lim{fill:none;stroke:#c4572f;stroke-width:2.4px;vector-effect:non-scaling-stroke;stroke-dasharray:1 8;stroke-linecap:round}
-#base .k-tronco{stroke:#6b4f33;stroke-width:1.6px;vector-effect:non-scaling-stroke}
-#base .k-arv{fill:#a5b86e;stroke:#3f4e28;stroke-width:1.3px;vector-effect:non-scaling-stroke}
-#base .k-pinho{fill:#80995a;stroke:#3f4e28;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+#base .k-lim{fill:none;stroke:#e2477a;stroke-width:2.6px;vector-effect:non-scaling-stroke;stroke-dasharray:1 8;stroke-linecap:round}
+#base .k-bosque{fill:#b6dd86}
+#base .k-tronco{stroke:#7a5233;stroke-width:1.6px;vector-effect:non-scaling-stroke}
+#base .k-arv{fill:#6cc04a;stroke:#2f6b2a;stroke-width:1.3px;vector-effect:non-scaling-stroke}
+#base .k-pinho{fill:#3f9a4a;stroke:#2f6b2a;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
 .tr{stroke:#2e3b45;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
-.nm{font-family:"Shantell Sans","Comic Neue",sans-serif;font-weight:700;fill:#26323b;paint-order:stroke;stroke:#f4ead0;stroke-linejoin:round;text-anchor:middle;pointer-events:none;letter-spacing:.02em}
+.nm{font-family:"Shantell Sans","Comic Neue",sans-serif;font-weight:700;fill:#26323b;paint-order:stroke;stroke:#fff;stroke-linejoin:round;text-anchor:middle;pointer-events:none;letter-spacing:.02em}
 .nm-sede{letter-spacing:.07em}
-.nm-viz{fill:#8d8068;font-weight:500;font-style:italic;stroke:none;letter-spacing:.09em}
-.nm-mar,.nm-rio{fill:#3d7c93;font-style:italic;font-weight:500;stroke:none;letter-spacing:.12em}
+.nm-viz{fill:#5f7a4a;font-weight:500;font-style:italic;stroke:none;letter-spacing:.09em}
+.nm-mar,.nm-rio{fill:#1f6f99;font-style:italic;font-weight:500;stroke:none;letter-spacing:.12em}
 .escala{display:none}
 .fala-t{font-family:"Shantell Sans",sans-serif;font-size:15px;font-weight:700}
 .zoom{position:absolute;right:18px;bottom:46px;z-index:3;display:flex;flex-direction:column;gap:6px}
@@ -232,6 +232,12 @@ footer a{color:var(--amarelo)}
 .med div{display:flex;gap:10px;justify-content:flex-end}
 .med button{font:inherit;font-weight:700;padding:8px 18px;border-radius:8px;border:2px solid #2e3b45;background:#f7f2e8;color:#18222b;cursor:pointer}
 </style>
+<style>
+h1 .roda-w{display:block;font-size:.6em;line-height:1.12;min-height:2.3em;margin-top:.25em}
+#roda{transition:opacity .35s}
+#roda.sai{opacity:0}
+@media (prefers-reduced-motion:reduce){#roda{transition:none}}
+</style>
 </head>
 <body>
 
@@ -243,7 +249,7 @@ footer a{color:var(--amarelo)}
       <pattern id="pMato" width="44" height="44" patternUnits="userSpaceOnUse"><rect width="44" height="44" fill="#d9ddaa"/><path d="M5 13c3-6 8-6 10 0M24 33c3-6 8-6 10 0M28 10c2-4 6-4 8 0M6 35c2-4 6-4 8 0" fill="none" stroke="#5f6c33" stroke-width="1.6" stroke-linecap="round"/></pattern>
       <pattern id="pUrb" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><rect width="16" height="16" fill="#f0e2c9"/><path d="M0 8h16" stroke="#d6bc96" stroke-width="1.3"/></pattern>
       <pattern id="pAreia" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#f4e0ab"/><circle cx="4" cy="5" r="1.1" fill="#c09a52"/><circle cx="12" cy="11" r="1.1" fill="#c09a52"/><circle cx="10" cy="2" r=".8" fill="#c09a52"/></pattern>
-      <pattern id="pFora" width="300" height="300" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><rect width="300" height="300" fill="#ece3cb"/><path d="M0 150h300" stroke="#d8cdb0" stroke-width="22"/></pattern>
+      <pattern id="pFora" width="300" height="300" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><rect width="300" height="300" fill="#e7f3d6"/><path d="M0 150h300" stroke="#d3e8bc" stroke-width="22"/></pattern>
       <pattern id="pPaul" width="26" height="18" patternUnits="userSpaceOnUse"><rect width="26" height="18" fill="#d3e6de"/><path d="M3 8h8M15 14h8M16 3h5" stroke="#5e9fb0" stroke-width="1.5" stroke-linecap="round"/></pattern>
     </defs>
     <g id="mundo"><g id="base"></g></g>
@@ -262,7 +268,7 @@ footer a{color:var(--amarelo)}
       </nav>
     </div>
     <div class="accroche">
-      <h1><span class="sobre">Gestão de alojamento local em Vila Real · 196 AL no RNAL</span>O seu AL a render.<br><em>Sem</em> lhe tirar as noites.</h1>
+      <h1><span class="sobre">Gestão de alojamento local em Vila Real</span>196 AL em Vila Real.<span class="roda-w"><em>Todos</em> <span id="roda">com hóspedes a perguntar pelo wifi.</span></span></h1>
       <p class="gratis">Pedido de contacto gratuito</p>
       <ul class="servs"><li>Reservas e preços</li><li>Hóspedes 24h</li><li>Limpeza e roupa</li><li>Avarias</li><li>Prazos legais</li><li>Contas claras</li></ul>
 <form class="contacto" id="f-contacto" novalidate>
@@ -389,7 +395,7 @@ footer a{color:var(--amarelo)}
 
 <script>
 const DATA={"concelho":"Vila Real","data_ref":"2026-11-08","data_ref_pt":"8 de novembro de 2026","total":196,"novos180":14,"mod":{"M":96,"Q":13,"E":22,"A":65},"freguesias":["Abaças","Adoufe e Vilarinho de Samardã","Andrães","Arroios","Borbela e Lamas de Olo","Campeã","Constantim e Vale de Nogueiras","Folhadela","Guiães","Lordelo","Mateus","Mondrões","Mouçós e Lamares","Nogueira e Ermida","Nossa Senhora da Conceição, São Pedro e São Dinis","Pena, Quintã e Vila Cova","São Tomé do Castelo e Justes","Torgueda","Vila Marim"],"freg_tot":[["Nossa Senhora da Conceição, São Pedro e São Dinis",94],["Campeã",16],["Vila Marim",9],["Mouçós e Lamares",9],["Borbela e Lamas de Olo",9],["Adoufe e Vilarinho de Samardã",7],["Andrães",7],["Constantim e Vale de Nogueiras",7],["Torgueda",6],["Nogueira e Ermida",5],["Folhadela",5],["Guiães",5],["Pena, Quintã e Vila Cova",4],["Abaças",3],["Mondrões",3],["Arroios",2],["Mateus",2],["Lordelo",2],["São Tomé do Castelo e Justes",1]],"anos":[["2015",2],["2016",5],["2017",9],["2018",25],["2019",19],["2020",2],["2021",10],["2022",22],["2023",30],["2024",21],["2025",29],["2026",22]],"conc_em":"em Vila Real","conc_de":"de Vila Real","conc_em_m":"Em Vila Real","rnal_url":"/pt/vila-real/rnal.json"};
-const ZONE={"w":22006,"h":22000,"centro":[16556,8850],"lugares":[["sede","VILA REAL",16581,9780,330],["v","Lordelo",14820,7879,187],["v","Mateus",19115,9336,187],["v","Arroios",18797,10933,187],["v","Folhadela",18002,13401,187],["v","Mondrões",12129,10076,187],["v","Vila Marim",11863,6500,187],["v","Torgueda",10645,13371,187],["v","Abaças",20830,18372,187],["viz","Amarante",2720,14065,165],["viz","Mondim de Basto",4955,4699,165],["viz","Peso da Régua",5976,18051,165],["viz","Santa Marta de Penaguião",11966,16534,165]],"mer":[],"plages":[],"eau":[],"falaises":[],"rios":[[[10290,22000],[9683,21730],[7932,22000]]],"casas":[[16570,8843,3],[16432,9047,1],[16781,8842,1],[16334,8838,1],[16679,9050,1],[16237,9033,1],[16679,8656,1],[16536,8474,1],[16752,8472,1],[16871,8653,1],[16643,8292,1],[16461,9394,1],[14746,7423,0],[14935,7421,0],[14538,7430,0],[14834,7615,0],[15048,7239,0],[19230,8863,0],[19010,8891,0],[19313,9045,0],[19130,9072,0],[18894,8698,0],[18807,10461,0],[18715,10658,0],[19025,10488,0],[18529,10292,0],[18908,10669,0],[14170,11127,0],[14400,11115,0],[14104,11308,0],[14287,11321,0],[14479,11319,0],[17973,12943,0],[18172,12933,0],[17882,13137,0],[17897,12759,0],[18087,13126,0],[12007,9430,0],[12209,9432,0],[12170,9812,0],[11879,9630,0],[12381,9801,0],[11850,6038,0],[12053,6042,0],[11668,6037,0],[11970,6225,0],[11773,6236,0],[10612,12916,0],[10795,12895,0],[10417,12916,0],[10490,13099,0],[10910,13107,0],[17270,1291,0],[17372,1472,0],[17070,1292,0],[17570,1481,0],[17387,1103,0],[12398,2065,0],[12198,2045,0],[12614,2049,0],[12490,1852,0],[12273,2246,0],[16724,17129,0],[16533,17146,0],[16939,17133,0],[17039,17317,0],[16707,16775,0],[8057,8244,0],[8248,8233,0],[7851,8235,0],[7969,8429,0],[8365,8439,0],[20842,17910,0],[20712,18099,0],[20940,18108,0],[20615,17916,0],[21043,17919,0],[20376,4458,2],[19290,16018,2],[17204,4446,2],[3268,9168,2],[9437,6394,2],[7147,10146,2],[5681,12109,2]],"tuk":[],"costa":false,"croquis":true,"u":150.0,"s0":0.09};
+const ZONE={"w":22006,"h":22000,"centro":[16556,8850],"lugares":[["sede","VILA REAL",16480,9620,330],["v","Lordelo",14728,7890,187],["v","Mateus",19248,9339,187],["v","Arroios",18780,10752,187],["v","Folhadela",18056,13407,187],["v","Mondrões",12147,10079,187],["v","Vila Marim",11737,6689,187],["v","Torgueda",10587,13363,187],["v","Abaças",20927,18351,187],["viz","Amarante",2720,14065,165],["viz","Mondim de Basto",4955,4699,165],["viz","Peso da Régua",5976,18051,165],["viz","Santa Marta de Penaguião",11966,16534,165]],"mer":[],"plages":[],"eau":[],"falaises":[],"rios":[[[10290,22000],[9683,21730],[7932,22000]]],"casas":[[16661,9049,3],[16653,8662,1],[16345,8847,1],[16149,8855,1],[16880,9029,1],[16858,8667,1],[17065,9041,1],[16348,9234,1],[16065,8674,1],[16339,8499,1],[15959,8861,1],[16443,8296,1],[14815,7263,0],[14638,7623,0],[14631,7234,0],[14402,7626,0],[15156,7440,0],[19212,8883,0],[19416,8861,0],[18990,8872,0],[19120,9075,0],[19503,9046,0],[18621,10455,0],[19004,10488,0],[19037,10122,0],[18418,10486,0],[18820,10090,0],[14188,11146,0],[14413,11150,0],[13984,11140,0],[14104,10935,0],[14292,10934,0],[17760,12945,0],[18205,12951,0],[18084,13143,0],[17961,12572,0],[18272,13134,0],[12284,9600,0],[12000,9417,0],[12181,9815,0],[11769,9790,0],[12500,9603,0],[11865,6063,0],[11646,6055,0],[11764,5860,0],[11541,5855,0],[11867,6425,0],[10500,12728,0],[10393,12914,0],[10820,12905,0],[10705,13099,0],[10516,13095,0],[17184,1485,0],[17386,1478,0],[17389,1110,0],[17163,1101,0],[16964,1496,0],[12378,2036,0],[12622,2049,0],[12177,2062,0],[12522,2230,0],[12097,1877,0],[16734,17148,0],[16926,17123,0],[16522,17147,0],[16830,16940,0],[17010,17310,0],[8142,8082,0],[7955,8080,0],[8152,8449,0],[7947,8445,0],[8062,7888,0],[20734,18087,0],[21048,17932,0],[20744,17732,0],[20955,17723,0],[21156,17749,0],[19290,16018,2],[17204,4446,2],[21844,5888,2],[3268,9168,2],[7147,10146,2],[20263,4273,2],[5681,12109,2],[9158,4073,2],[21453,897,2],[6294,8397,2],[2238,11181,2]],"tuk":[],"costa":false,"croquis":true,"u":150.0,"s0":0.09};
 const FORM_URL="https://script.google.com/macros/s/AKfycbxwnyOWuOgnQ2B0Tt80EEkKIetwzZYKj0BX6JDREwDRHdlRyLzmVsHvYoOz5avhBOp8Kw/exec";
 /* ---------- medição (só com consentimento) ---------- */
 const M=(function(){
@@ -462,7 +468,7 @@ for(const[k,n,x,y,t,a]of ZONE.lugares){if(!t)continue;const e=el("text",{x,y,cla
 /* ---------- maisons dessinées, en grappes ---------- */
 const casas=[];
 const NOMES=["Casa do Sol","Ocean View T2 (vista parcial)","Blue Door Apartment","Vila Gaivota","Sunny Retreat","Casa da Avó Lurdes","Golden Coast Loft","Monte da Paz (com galo)","Cantinho do Sossego","Sea Breeze T1","Suites do Chefe","Casa Azulejo"];
-const TELHAS=["#c9603a","#c9603a","#b9532f","#d4703f","#2f6f9a"];
+const TELHAS=["#e4572e","#e4572e","#d9482b","#f28c38","#2f7fc1"];
 function casa(x,y,o){
   o=o||{};const monte=o.t===2;
   if(o.t===3){const w=U*1.05,h=w*.7,e=g({class:"casa",transform:`translate(${f1(x)},${f1(y)})`},camadaCasas);
@@ -477,7 +483,7 @@ function casa(x,y,o){
   const cor=monte?"#c9603a":pick(TELHAS),tp=-h/2,r=w*(monte?.22:.42);
   const e=g({class:"casa",transform:`translate(${f1(x)},${f1(y)}) rotate(${f1(a)})`},camadaCasas);
   const i=g(o.pop?{class:"pop"}:{},e);
-  el("path",{class:"tr",d:`M${f1(-w/2)},${f1(tp)}h${f1(w)}v${f1(h)}h${f1(-w)}z`,fill:"#fbf7ee"},i);
+  el("path",{class:"tr",d:`M${f1(-w/2)},${f1(tp)}h${f1(w)}v${f1(h)}h${f1(-w)}z`,fill:"#fff"},i);
   el("path",{class:"tecto tr",fill:cor,d:`M${f1(-w/2-w*.07)},${f1(tp)}L${f1(monte?-w*.3:0)},${f1(tp-r)}${monte?`L${f1(w*.3)},${f1(tp-r)}`:""}L${f1(w/2+w*.07)},${f1(tp)}z`},i);
   el("rect",{x:f1(-w*.09),y:f1(h/2-h*.5),width:f1(w*.18),height:f1(h*.5),fill:"#2e3b45"},i);
   el("rect",{class:"tr",x:f1(w*.2),y:f1(tp+h*.22),width:f1(w*.17),height:f1(w*.15),fill:"#9fd4e3"},i);
@@ -599,5 +605,6 @@ if(DATA){
 }
 })();
 </script>
+<script>(()=>{const F=["com hóspedes a perguntar pelo wifi.", "com alguém a chegar às 3h da manhã.", "com malas de rodas na calçada.", "com uma chave que não abre.", "com um check-out às 18h.", "com uma sogra a dormir no sofá.", "com um vizinho a contar as malas."],e=document.getElementById('roda');if(!e||matchMedia('(prefers-reduced-motion: reduce)').matches)return;let i=0;setInterval(()=>{e.classList.add('sai');setTimeout(()=>{i=(i+1)%F.length;e.textContent=F[i];e.classList.remove('sai')},350)},3200)})()</script>
 </body>
 </html>
