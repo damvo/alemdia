@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidade | AL em Dia</title>
+<link rel="canonical" href="https://alemdia.pt/pt/privacidade/">
+<style>
+@font-face{font-family:"Archivo";src:url(/fonts/archivo.woff2) format("woff2");font-weight:100 900;font-stretch:62% 125%;font-display:swap}
+body{margin:0;background:#f7f2e8;color:#18222b;font:17px/1.6 "Archivo",system-ui,sans-serif}
+main{max-width:760px;margin:0 auto;padding:48px 18px 80px}
+h1{font-size:44px;line-height:1;font-weight:800;font-stretch:72%;text-transform:uppercase;margin:0 0 24px}
+h2{font-size:22px;font-weight:800;font-stretch:80%;text-transform:uppercase;margin:34px 0 8px}
+a{color:#1f4a9a}
+.voltar{display:inline-block;margin-bottom:28px;font-weight:600;text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+<a class="voltar" href="/">← AL em Dia</a>
+<h1>Política de privacidade</h1>
+<p>Última atualização: 9 de novembro de 2026.</p>
+
+<h2>Quem trata os seus dados</h2>
+<p>AL em Dia (alemdia.pt), Lisboa, Portugal. Contacto: <a href="mailto:privacidade@alemdia.pt">privacidade@alemdia.pt</a>.</p>
+
+<h2>Que dados recolhemos</h2>
+<p>Apenas os que escreve no formulário: o seu número de telemóvel, o seu email se o indicar, o número de registo do seu alojamento local se o verificou, e as opções que marcou. Guardamos também a data e a hora do envio, a página de onde enviou, o site de onde chegou, o código do link que lhe enviámos se chegou por ele, e o tempo passado na página, como prova do seu consentimento e para saber como nos encontrou.</p>
+<p>A verificação do número de registo faz-se no seu navegador, com os dados públicos do Registo Nacional de Alojamento Local. Se não aceitar a medição de visitas, o número que escreve na caixa de verificação não nos é enviado, a não ser que submeta o formulário. Se aceitar, é registado (ver «Medição de visitas»).</p>
+
+<h2>Para quê</h2>
+<p>Só para as finalidades que marcar:</p>
+<p><b>Contacto por uma gestora.</b> Transmitimos o seu telemóvel, o seu email se o indicou, e o número de registo a uma empresa de gestão de alojamento local que trabalhe na sua zona, para que ela o contacte por telefone ou WhatsApp e lhe apresente as suas condições. Fundamento: o seu consentimento.</p>
+<p><b>Alertas sobre o seu registo.</b> Enviamos-lhe mensagens por WhatsApp ou email quando houver alterações relevantes no registo do seu alojamento ou na sua zona. Fundamento: o seu consentimento.</p>
+
+<h2>Quem os recebe</h2>
+<p>A gestora a quem o apresentamos, apenas se marcou essa opção. A Google, cujo serviço Google Sheets usamos para guardar os contactos e os dados de medição, e que trata os dados por nossa conta ao abrigo do Quadro de Privacidade de Dados UE-EUA.</p>
+
+<h2>Durante quanto tempo</h2>
+<p>Até retirar o consentimento ou até deixarem de ser úteis para as finalidades indicadas.</p>
+
+<h2>Os seus direitos</h2>
+<p>Pode a qualquer momento retirar o consentimento, respondendo STOP a uma mensagem, clicando no link no fim de cada email ou escrevendo para <a href="mailto:privacidade@alemdia.pt">privacidade@alemdia.pt</a>. Pode também pedir acesso, retificação, apagamento ou portabilidade dos seus dados, ou opor-se ao seu tratamento. Se considerar que os seus direitos não foram respeitados, pode apresentar queixa à Comissão Nacional de Proteção de Dados (<a href="https://www.cnpd.pt">cnpd.pt</a>).</p>
+
+<h2 id="medicao">Medição de visitas</h2>
+<p>Só se carregar em «Aceitar» no aviso de medição, registamos: as páginas que vê, os cliques, até onde desce na página, o tempo passado, os campos do formulário em que toca, os números de registo que verifica, a língua, o fuso horário, o tamanho do ecrã e o tipo de navegador.</p>
+<p>Para reconhecer o seu navegador numa visita seguinte, guardamos nele um identificador aleatório (armazenamento local do navegador, equivalente a um cookie). Se chegou por um link que lhe enviámos, esse link contém um código que liga a visita à mensagem que lhe enviámos, e portanto a si. Um número de registo verificado permite identificar o titular do alojamento nos dados públicos do RNAL.</p>
+<p>Fundamento: o seu consentimento. Pode mudar a sua escolha a qualquer momento em «Medição», no fundo das páginas de concelho. Guardamos estes dados enquanto forem úteis para conhecer a utilização do site.</p>
+
+<h2>Se recebeu uma mensagem nossa</h2>
+<p>Contactamos titulares de alojamento local a partir de dados públicos: o Registo Nacional de Alojamento Local (dados.gov.pt) e os contactos que as empresas e os titulares publicam na internet. Usamos o nome ou a firma, o NIF, os números de registo e os contactos profissionais, só para lhe apresentar o AL em Dia. Fundamento: o nosso interesse legítimo em dar a conhecer o serviço. Pode opor-se a qualquer momento, respondendo STOP ou escrevendo para <a href="mailto:privacidade@alemdia.pt">privacidade@alemdia.pt</a>. Guardamos estes dados até se opor ou até deixarem de ser úteis para esta finalidade.</p>
+
+<h2>Fonte dos dados públicos</h2>
+<p>Registo Nacional de Alojamento Local, Turismo de Portugal, publicado em dados.gov.pt (licença CC BY 4.0). Este site não é um serviço do Turismo de Portugal.</p>
+</main>
+</body>
+</html>

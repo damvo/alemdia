@@ -110,6 +110,30 @@ a{color:inherit}
 .nome{font-family:"Shantell Sans","Comic Neue",sans-serif;font-weight:700;fill:#26323b;paint-order:stroke;stroke:#f5edd8;stroke-width:7px;stroke-linejoin:round;text-anchor:middle;pointer-events:none;letter-spacing:.03em}
 .n-neighbourhood,.n-hamlet{font-weight:500;opacity:.7}
 .n-cape{font-style:italic;font-weight:500;fill:#24586b;stroke:#b8dce3}
+#mapa{background:#f4ead0}
+#base .k-mar{fill:#d7e7e4}
+#base .k-eco{fill:none;stroke:#6f9fb0;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-dasharray:7 8;stroke-linecap:round;opacity:.75}
+#base .k-eco2{opacity:.4}
+#base .k-onda{fill:none;stroke:#5b8fa3;stroke-width:1.8px;vector-effect:non-scaling-stroke;stroke-linecap:round}
+#base .k-terra{fill:#f4ead0}
+#base .k-fora{fill:url(#pFora)}
+#base .k-praia{fill:#f2d891}
+#base .k-lago{fill:#c3dde2;stroke:#4f8aa0;stroke-width:1.6px;vector-effect:non-scaling-stroke}
+#base .k-rio{fill:none;stroke:#5a9bb4;stroke-width:3.4px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
+#base .k-est1{fill:none;stroke:#9a6b3c;stroke-width:3px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
+#base .k-est2{fill:none;stroke:#b58a57;stroke-width:2px;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
+#base .k-cam{fill:none;stroke:#a5875c;stroke-width:2.2px;vector-effect:non-scaling-stroke;stroke-dasharray:1 8;stroke-linecap:round}
+#base .k-costa{fill:none;stroke:#2e3b45;stroke-width:2.4px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+#base .k-lim{fill:none;stroke:#c4572f;stroke-width:2.4px;vector-effect:non-scaling-stroke;stroke-dasharray:1 8;stroke-linecap:round}
+#base .k-tronco{stroke:#6b4f33;stroke-width:1.6px;vector-effect:non-scaling-stroke}
+#base .k-arv{fill:#a5b86e;stroke:#3f4e28;stroke-width:1.3px;vector-effect:non-scaling-stroke}
+#base .k-pinho{fill:#80995a;stroke:#3f4e28;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.tr{stroke:#2e3b45;stroke-width:1.3px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.nm{font-family:"Shantell Sans","Comic Neue",sans-serif;font-weight:700;fill:#26323b;paint-order:stroke;stroke:#f4ead0;stroke-linejoin:round;text-anchor:middle;pointer-events:none;letter-spacing:.02em}
+.nm-sede{letter-spacing:.07em}
+.nm-viz{fill:#8d8068;font-weight:500;font-style:italic;stroke:none;letter-spacing:.09em}
+.nm-mar,.nm-rio{fill:#3d7c93;font-style:italic;font-weight:500;stroke:none;letter-spacing:.12em}
+.escala{display:none}
 .fala-t{font-family:"Shantell Sans",sans-serif;font-size:15px;font-weight:700}
 .zoom{position:absolute;right:18px;bottom:46px;z-index:3;display:flex;flex-direction:column;gap:6px}
 .zoom button{width:36px;height:36px;border-radius:8px;border:2px solid var(--tinta);background:var(--cal);font:700 20px var(--display);cursor:pointer;line-height:1}
@@ -219,6 +243,7 @@ footer a{color:var(--amarelo)}
       <pattern id="pMato" width="44" height="44" patternUnits="userSpaceOnUse"><rect width="44" height="44" fill="#d9ddaa"/><path d="M5 13c3-6 8-6 10 0M24 33c3-6 8-6 10 0M28 10c2-4 6-4 8 0M6 35c2-4 6-4 8 0" fill="none" stroke="#5f6c33" stroke-width="1.6" stroke-linecap="round"/></pattern>
       <pattern id="pUrb" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><rect width="16" height="16" fill="#f0e2c9"/><path d="M0 8h16" stroke="#d6bc96" stroke-width="1.3"/></pattern>
       <pattern id="pAreia" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#f4e0ab"/><circle cx="4" cy="5" r="1.1" fill="#c09a52"/><circle cx="12" cy="11" r="1.1" fill="#c09a52"/><circle cx="10" cy="2" r=".8" fill="#c09a52"/></pattern>
+      <pattern id="pFora" width="300" height="300" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><rect width="300" height="300" fill="#ece3cb"/><path d="M0 150h300" stroke="#d8cdb0" stroke-width="22"/></pattern>
       <pattern id="pPaul" width="26" height="18" patternUnits="userSpaceOnUse"><rect width="26" height="18" fill="#d3e6de"/><path d="M3 8h8M15 14h8M16 3h5" stroke="#5e9fb0" stroke-width="1.5" stroke-linecap="round"/></pattern>
     </defs>
     <g id="mundo"><g id="base"></g></g>
@@ -251,7 +276,7 @@ footer a{color:var(--amarelo)}
 </form>
     </div>
   </div>
-  <p class="dica">Arraste o mapa. Clique nas casas, nos campos, nos rios. Mapa ilustrativo.</p>
+  <p class="dica">Arraste o mapa. Clique nas casas e no campo. Mapa desenhado à mão.</p>
   <div class="escala"><i id="escala-i"></i><span id="escala-t">500 m</span></div>
   <div class="zoom"><button type="button" id="zmais" aria-label="Aproximar">+</button><button type="button" id="zmenos" aria-label="Afastar">−</button></div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
@@ -364,7 +389,7 @@ footer a{color:var(--amarelo)}
 
 <script>
 const DATA={"concelho":"Murça","data_ref":"2026-11-08","data_ref_pt":"8 de novembro de 2026","total":12,"novos180":0,"mod":{"M":10,"A":1,"E":1},"freguesias":["Candedo","Jou","Murça","Noura e Palheiros"],"freg_tot":[["Noura e Palheiros",5],["Murça",5],["Jou",1],["Candedo",1]],"anos":[["2012",1],["2015",1],["2016",2],["2021",2],["2022",1],["2023",1],["2024",3],["2025",1]],"conc_em":"em Murça","conc_de":"de Murça","conc_em_m":"Em Murça","rnal_url":"/pt/murca/rnal.json"};
-const ZONE={"w":22004,"h":22000,"centro":[14020,11000],"lugares":[["town","Noura e Palheiros",14020,11000]],"mer":[],"plages":[],"eau":[],"falaises":[],"rios":[[[17641,19167],[17629,18761],[17467,18378],[17086,18027],[17435,17568],[17193,17197],[16803,16848],[16737,16450],[16714,16046],[16266,15706],[16157,15315],[16097,14916],[16443,14457],[16649,14020],[16904,13574],[17084,13140],[17136,12725],[16695,12383],[17045,11924],[16604,11582],[16923,11127],[16887,10726],[16953,10308],[16792,9925],[16671,9536],[16711,9123],[16674,8721],[16317,8367],[16271,7966],[16518,7522],[16700,7088],[16689,6682],[16418,6315],[16571,5885],[15621,5619]]],"casas":[[14059,11811,1],[14317,11040,1],[13226,10861,0],[6935,11776,0],[3703,12170,0],[14575,11407,1],[2446,10915,1],[13816,11315,1],[13860,10709,1],[7286,11560,0],[13918,10978,1],[6376,6400,0],[15303,7158,0],[15221,7770,0],[8291,2725,0],[2207,10158,0],[13986,11052,1],[13945,10912,1],[13979,11283,1],[11453,12753,0],[7514,3967,1],[14675,10749,1],[14691,10556,1],[13668,11297,1],[13819,11673,1],[13614,11481,1],[13869,11277,1],[7793,3439,0],[14080,10735,1],[11295,13051,1],[7534,8936,1],[18146,18806,0],[7843,4154,1],[14708,10062,0],[13733,10940,1],[14354,10857,1],[13901,11142,1],[16085,10124,0],[13663,12023,1],[13961,11684,1],[7517,4152,1],[15599,12619,1],[14188,10838,1],[14403,11042,1],[14927,11205,1],[7285,8923,1],[15001,10122,0],[14776,11736,0],[13595,10655,1],[16690,9875,0],[10618,8080,0],[14765,10643,1],[14222,10940,1],[14490,10550,1],[13987,10864,1],[13695,11146,1],[15715,12672,1],[5362,13242,0],[13457,11086,1],[5852,11694,0],[14229,10709,1],[11380,13072,1],[9239,9891,0],[15629,12566,1],[13805,10512,1],[13473,11557,1],[7182,8905,1],[14054,11070,1],[15610,12585,1],[13870,10909,1],[13629,10915,1],[11513,12874,1],[13751,10558,1],[13774,11021,1],[13893,10956,1],[7848,13383,0],[16029,19448,0],[14574,16850,0],[11226,11571,0],[13666,11373,1],[13757,11545,1],[10104,7409,1],[11442,13294,1],[7241,8974,1],[11353,13157,1],[7467,9115,1],[7216,13827,0],[11397,13046,1],[11354,13061,1],[13912,11130,1],[14908,10972,1],[11410,13031,1],[14635,10917,1],[14292,17118,0],[13659,10401,1],[14321,11450,1],[10117,7410,1],[14390,11399,1],[14043,10747,1],[13557,11403,1],[7455,4037,1],[13857,11526,1],[7649,9502,0],[7564,4221,1],[7008,6327,1],[2392,11153,1],[2507,11055,1],[11403,13048,1],[14055,11247,1],[13955,11077,1],[13811,10844,1],[15104,8539,0],[12461,5578,0],[14020,12706,0],[2697,11025,1],[1283,10815,0],[14090,11581,1],[10882,3294,0],[14480,10579,1],[11328,13005,1],[8540,4147,0],[16140,12103,0],[13306,11813,1],[8075,12669,0],[19251,19538,0],[14342,11623,1],[7610,3778,1],[8290,11737,0],[7332,6259,1],[13440,10165,1],[13865,11942,1],[6946,6286,1],[15083,10461,1],[220,11207,0],[2597,11001,1],[2523,10947,1],[14173,10555,1],[786,10583,0],[13780,14579,0],[7360,8902,1],[7470,4156,1],[13655,11226,1],[14756,11287,0],[15195,14327,0],[11431,13061,1],[1290,8350,0],[7483,4554,1],[12941,11304,1],[11556,13060,1],[14073,10144,1],[14387,10423,1],[13334,10673,1],[12234,10430,0],[14070,11035,1],[14103,10909,1],[11408,13006,1],[15565,12616,1],[14228,11514,1],[14049,11288,1],[14165,15409,0],[12834,6515,0],[14256,10719,1],[14030,11012,1],[13906,10743,1],[13253,11071,1],[13871,11092,1],[8369,7237,0],[10926,10179,0],[15601,12604,1],[13208,11226,1],[14759,11847,0],[14458,10847,1],[13469,11141,1],[6666,6106,0],[15445,17739,0],[14031,10856,1],[13528,10429,1],[7135,8884,1],[10825,393,0],[14001,10627,1],[7533,9063,1],[10139,8324,0],[10076,7322,1],[13991,11041,1],[7588,4241,1],[15130,10084,0],[6812,6275,1],[12988,16985,0],[15636,12434,1],[7444,4106,1],[13772,11184,1],[14157,10995,1],[13930,10958,1],[14109,10988,1],[13986,11046,1],[12389,6847,0],[9805,10655,0],[14230,12635,0],[13871,11271,1],[13657,11646,1],[10422,7079,0],[14009,10931,1],[14725,10278,1],[14012,10984,1],[13985,10953,1],[7088,6389,1],[7160,9271,1],[13045,644,0],[7312,8909,1],[13278,10660,1],[11842,13058,0],[14435,11432,1],[15077,8798,0],[2538,10987,1],[13947,11017,1],[4497,12369,0],[7539,4204,1],[14710,10675,1],[7471,4244,1],[14375,10803,1],[7548,8886,1],[2075,11153,0],[13876,11152,1],[13528,11025,1],[13931,11575,1],[13510,10628,1],[3162,11958,0],[13704,10715,1],[11363,13125,1],[13241,11509,1],[14027,11016,1],[14598,11287,1],[13972,11127,1],[7697,4237,1],[14495,8449,0],[10135,6877,0],[14413,10954,1],[10024,2889,0],[12799,10657,0],[14162,10728,1],[11355,13033,1],[13783,10994,1],[13889,11418,1],[8245,7686,0],[13600,10450,1],[3205,7050,0],[5500,12435,0],[13787,10485,1],[13978,10893,1],[14268,10874,1],[13809,10663,1],[13017,10417,0],[7465,4196,1],[2447,11073,1],[13629,16676,0],[14015,11005,1],[14356,10347,1],[14165,11613,1],[15546,14338,0],[13896,10737,1],[11015,5297,0],[14341,11473,1],[14315,10719,1],[2565,11153,1],[8311,2528,0],[7580,4150,1],[7499,4070,1],[7399,8943,1],[14094,10884,1],[13771,10612,1],[4996,9304,0],[13611,11082,1],[6364,13084,0],[7242,8994,1],[14254,12068,1],[11344,13105,1],[11442,13051,1],[7360,9118,1],[10431,9840,0],[12394,13876,0],[13333,10932,1],[7502,9085,1],[14432,11087,1],[13807,10973,1],[13950,10974,1],[14198,11130,1],[9769,2633,0],[11286,8115,0],[7886,9342,0],[7380,9017,1],[14285,10756,1],[10074,7333,1],[6321,13832,0],[8342,13010,0],[5166,9424,0],[7415,4032,1],[14283,10939,1],[4499,13544,0],[11090,1389,0],[13972,10951,1],[11234,4394,0],[14233,10866,1],[14012,10999,1],[13021,11362,0],[10733,4463,0],[7471,4163,1],[14010,12220,1],[10453,12695,0],[7669,4582,1],[14031,10977,1],[9496,13083,0],[7176,6446,1],[11595,13096,1],[15856,9684,0],[13934,10952,1],[16685,19671,0],[13006,15021,0],[7107,6340,1],[6991,6276,1],[2787,10836,1],[7528,4160,1],[7210,4549,0],[3157,7415,0],[14420,12286,0],[11338,13132,1],[13765,10643,1],[2725,11190,1],[9447,3784,0],[13424,10601,1],[7372,9046,1],[7607,9222,1],[7958,11633,0],[6977,6412,1],[11341,13151,1],[7074,6356,1],[13820,10879,1],[7626,9215,1],[7361,4103,1],[11358,12751,0],[11443,13062,1],[13900,11369,1],[11514,13130,1],[14147,10698,1],[11123,13229,0],[11294,12999,1],[11520,12962,1],[6555,7148,0],[2457,8711,0],[14075,10786,1],[13909,10971,1],[10078,7387,1],[14350,11078,1],[10795,1511,0],[13845,10557,1],[7217,8822,1],[14364,11016,1],[7673,4019,1],[13963,10697,1],[7993,4184,0],[14424,10790,1],[8333,5014,0],[13246,10701,1],[14172,11067,1],[15474,12635,1],[7406,4189,1],[14178,10823,1],[13315,10999,1],[14716,10862,1],[13765,11048,1],[6847,8882,0],[3330,11066,0],[2615,10624,0],[13543,10622,1],[11310,13033,1],[7344,3629,1],[2312,11676,0],[15720,12901,1],[8687,2105,0],[14060,10917,1],[3319,9280,0],[7464,4457,1],[14007,12927,0],[6689,13041,0],[14152,10835,1],[7330,13499,0],[7323,9015,1],[14050,11017,1],[3112,8757,0],[13730,11019,1],[13968,10551,1],[13094,11601,1],[13619,11619,1],[7358,9033,1],[14047,11097,1],[9975,7443,1],[7556,2289,0],[2553,11094,1],[14022,11063,1],[2568,11014,1],[14083,10970,1],[11348,12957,1],[7518,4057,1],[7466,9037,1],[13960,10691,1],[14257,10860,1],[14026,10336,1],[14239,10853,1],[13922,10715,1],[11442,13133,1],[4690,11921,0],[13781,10560,1],[4819,8961,0],[14590,11422,1],[7353,9062,1],[14071,10987,1],[14611,10717,1],[14193,10164,1],[13973,11015,1],[15452,12481,1],[14144,11137,1],[7165,6392,1],[2530,10883,1],[7391,4415,1],[7873,4012,1],[2752,10878,0],[14227,10832,1],[13215,11447,1],[15618,12589,1],[11429,7092,0],[13278,11578,1],[13763,11742,1],[7443,9068,1],[7525,9046,1],[7465,9072,1],[7503,4257,1],[11336,13038,1],[14154,11455,1],[14503,11097,1],[7333,11069,0],[14321,11097,1],[13999,11209,1],[7487,4156,1],[11896,4700,0],[13871,10744,1],[14001,10988,1],[7475,4133,1],[14391,11369,1],[7037,6324,1],[2610,11077,1],[7645,8826,1],[13355,11906,0],[13710,10742,1],[13994,10988,1],[13860,10943,1],[13933,10952,0],[13664,15203,0],[14277,11123,1],[11314,12877,1],[13329,10046,0],[11401,13407,0],[14057,11241,1],[14094,11360,1],[13799,10848,1],[9692,9746,0],[14047,10967,1],[10191,7516,1],[11421,13158,1],[6936,6597,1],[2518,11107,1],[13835,10813,1],[13955,11054,1],[4085,13271,0],[14170,10982,1],[14034,10884,1],[2409,11112,1],[7293,9125,1],[11426,13110,1],[13985,10100,1],[13660,10547,0],[8339,9009,0],[14150,11549,1],[14187,10753,1],[14197,10884,1],[13923,11263,1],[15740,12484,1],[13943,10512,1],[58,9405,0],[11393,12964,1],[14027,10970,1],[11742,10785,0],[11412,12998,1],[14623,10441,1],[13546,11836,1],[11390,13065,1],[15929,12621,1],[7535,8729,1],[213,12241,0],[14024,10997,1],[14743,11012,1],[13382,11661,1],[12751,4843,0],[2550,11027,1],[7192,8661,0],[7477,4192,1],[1140,10935,0],[13793,15401,0],[12481,6013,0],[14283,10985,1],[11350,13074,1],[12871,11615,0],[14203,10985,1],[9321,7535,0],[3256,10269,0],[13920,11686,1],[13959,11008,1],[3898,7981,0],[13934,11260,1],[14619,10480,1],[7778,8783,0],[14322,11757,1],[14237,11278,1],[7425,4151,1],[15692,12603,1],[7092,9838,0],[14171,10789,1],[7444,9141,1],[7424,9057,1],[14087,10325,1],[14020,11000,1],[14078,10988,1],[8078,4282,0],[14278,10687,1],[5165,9465,0],[6989,6260,1],[7203,9087,1],[13916,10962,1],[14430,11514,1],[7448,4056,1],[14367,11663,1],[12731,13918,0],[13938,11232,1],[15956,18306,0],[9174,13261,0],[13459,10261,1],[13939,11012,1],[13114,11163,1],[14072,10350,1],[11405,13045,1],[15438,12303,0],[14596,10769,1],[3019,10905,0],[2752,11221,1],[14646,10949,1],[7255,9242,1],[10158,7321,1],[13750,11051,1],[11316,13096,1],[11389,12982,1],[13638,11035,1],[11710,9305,0],[10289,7273,1],[13895,10648,1],[13867,10764,1],[13162,11806,0],[13694,11616,1],[14194,10896,1],[14216,10898,1],[13502,11223,1],[14789,11835,0],[11800,7814,0],[8113,7853,0],[7420,9002,1],[7481,8920,1],[14378,10893,1],[13581,11321,1],[11421,13027,1],[13638,10584,1],[13989,10995,1],[11323,12966,1],[7586,3955,1],[15142,12913,0],[7344,4180,1],[11477,13052,1],[7668,4495,1],[13722,10974,1],[10929,10726,0],[13970,11265,1],[13103,10734,1],[11838,15042,0],[14156,11071,1],[13278,10559,1],[13996,11036,1],[6946,6632,1],[14002,11260,1],[11344,13192,1],[3549,7704,0],[7347,8961,1],[15531,12539,1],[8633,10059,0],[14023,10949,1],[7493,4174,1],[7988,4026,1],[11358,13042,1],[14019,10979,1],[13405,10105,1],[7025,6337,1],[2409,11473,0],[14556,11639,1],[10100,7442,1],[13928,10974,1],[13862,10715,1],[7205,6202,1],[13470,10937,1],[7472,4193,1],[13584,10597,1],[14017,11157,1],[13946,10897,1],[15588,12433,1],[13403,10186,1],[14017,10528,1],[14382,11490,1],[14233,3049,0],[3417,8588,0],[9097,5653,0],[9804,7418,0],[8448,6412,0],[14011,11520,1],[13642,10268,1],[2923,10844,0],[15659,12179,1],[14706,11221,1],[13754,11004,1],[7059,6172,1],[14624,11263,1],[15560,12551,1],[7065,5980,1],[13969,11025,1],[14366,11590,1],[14379,10898,1],[15600,12594,1],[7307,8994,1],[14206,11067,1],[12474,14372,0],[14208,10774,1],[15519,8913,0],[7410,3947,1],[11439,13054,1],[13863,11009,1],[7253,8816,1],[7075,9268,1],[15200,11025,0],[13744,10908,1],[13728,10768,1],[15128,9442,0],[7132,9094,1],[14420,10379,1],[7843,12318,0],[5837,8195,0],[2557,11026,1],[13957,10851,1],[7351,4228,1],[12930,10900,0],[13932,10744,1],[7414,9011,1],[14177,11257,1],[13086,10757,1],[7367,9124,1],[7264,9181,1],[13679,11445,1],[15164,12399,0],[14459,10373,1],[14379,11697,1],[13287,10920,1],[11020,837,0],[13802,11208,1],[6815,7588,0],[15647,12842,1],[7448,4353,1],[23,12823,0],[13986,10996,1],[7449,4148,1],[2557,11047,1],[931,9979,0],[15130,11805,0],[13909,10981,1],[2388,12455,0],[11419,13118,1],[7519,4091,1],[1891,11044,0],[13832,10838,1],[13916,6392,0],[13936,10928,1],[14339,11653,1],[7315,9052,1],[14256,11117,1],[13775,11249,1],[14222,10755,1],[167,11003,0],[479,12294,0],[13980,10960,1],[11226,8269,0],[13257,10084,0],[10114,7389,1],[14223,11342,1],[4413,14110,0],[13986,11003,1],[6506,6025,0],[7435,4131,1],[8853,7915,0],[10296,11806,0],[14131,11374,1],[14236,10476,1],[7142,8752,1],[13709,10820,1],[14027,11003,1],[7510,4072,1],[8867,6462,0],[14442,19312,0],[7630,9488,0],[14796,10517,1],[14381,11377,1],[13953,11683,1],[2505,11030,1],[2531,10931,1],[13932,11018,1],[14372,11290,1],[11435,12970,1],[13969,9852,0],[7424,4296,1],[14094,10990,1],[7606,4183,1],[7574,9116,1],[13767,11469,1],[13813,11021,1],[15110,11147,0],[14258,11008,1],[8466,9274,0],[13846,11026,1],[16158,10448,0],[13676,11376,1],[6873,13007,0],[7610,9366,0],[14090,10988,1],[12851,9161,0],[14200,11291,1],[7972,4215,1],[3687,12903,0],[14278,10558,1],[7500,4202,1],[14336,10316,1],[15395,13382,0],[12414,10552,0],[13830,10904,1],[11491,3823,0],[12902,10827,0],[14379,11085,1],[7638,9082,1],[13773,10813,1],[14039,10991,1],[11397,13001,1],[14200,11963,1],[14070,10972,1],[11391,13007,1],[14455,12191,0],[10986,5029,0],[14093,10830,1],[2714,10735,1],[13967,10836,1],[14078,10839,1],[11243,10095,0],[14148,12667,0],[9206,12205,0],[13811,11273,1],[13991,11035,1],[13856,11643,1],[11573,13022,1],[11378,13060,1],[7560,4214,1],[14771,8570,0],[13847,10807,1],[3141,10708,0],[13806,10947,1],[13762,11432,1],[15782,12449,0],[14325,10727,1],[7888,4513,0],[7327,8993,1],[15928,13217,0],[7598,3983,1],[14249,10849,1],[10393,7296,1],[3129,11010,0],[13765,11002,1],[7889,6640,0],[15169,13917,0],[14070,11462,1],[13692,10298,1],[7492,4186,1],[16207,13930,0],[8674,10040,0],[14206,10883,1],[7733,4378,1],[16084,12900,0],[14654,10405,1],[7275,8952,1],[6741,12434,0],[13918,10472,1],[13253,10170,0],[14322,11168,1],[16552,13995,0],[2696,11266,1],[13506,9340,0],[13895,10919,1],[14000,10809,1],[14622,10159,1],[7596,8861,1],[13583,10454,1],[457,12872,0],[13740,11039,1],[11415,12977,1],[14200,10219,1],[13856,11539,1],[14568,11441,1],[12982,10503,0],[7432,9172,1],[14299,10630,1],[15242,10457,0],[7485,4127,1],[11345,13228,1],[11425,13065,1],[14059,11123,1],[13485,11183,1],[13456,10800,1],[2630,10920,1],[5892,6629,0],[13982,10893,1],[13826,10789,1],[14355,11380,1],[14008,10902,1],[12952,1624,0],[11602,5374,0],[2756,10370,0],[7385,4469,1],[12030,12059,0],[13069,1631,0],[14265,10916,1],[13971,10282,1],[13435,10419,1],[13504,11824,1],[7435,4121,1],[12083,2868,0],[7031,6184,1],[13649,11800,1],[7014,6326,1],[14163,11135,1],[11408,3230,0],[14640,10894,1],[10100,7284,1],[7052,6285,1],[6952,6229,1],[13844,10579,1],[13994,11016,1],[12930,6812,0],[14245,10172,1],[13763,10646,1],[13947,10997,1],[12925,12809,0],[13814,11060,1],[9664,7412,0],[10083,7372,1],[14392,10740,1],[14746,15266,0],[15369,12759,1],[2487,11068,1],[2671,11053,1],[11405,13030,1],[15604,12646,1],[13862,10688,1],[6989,7634,0],[14734,10289,1],[7339,9170,1],[13733,10631,1],[10368,7433,1],[14511,10871,1],[14187,11183,1],[8287,4893,0],[13773,11397,1],[13332,9967,0],[10172,7472,1],[10012,7407,1],[13998,11007,1],[14156,10174,1],[8307,5155,0],[8060,6300,0],[7436,4139,1],[14060,10923,1],[7647,4472,1],[7066,7644,0],[13226,11237,1],[10097,7432,1],[10386,13659,0],[13707,11667,1],[13905,11264,1],[7763,3961,1],[6958,8952,0],[13931,11007,1],[6967,13648,0],[7174,8652,0],[14118,10417,1],[15442,10372,0],[13934,10947,1],[13782,10820,1],[6970,6320,1],[14471,15255,0],[13957,12191,1],[7604,3849,1],[7376,2614,0],[10596,1813,0],[14013,10999,1],[15688,12259,1],[11420,13005,1],[14201,11148,1]],"tuk":[[14020,11000],[13864,11378],[13860,11844],[13455,12078],[13459,12549],[13387,12975],[13083,13268],[13078,13315]],"costa":false,"ilustrativo":true};
+const ZONE={"w":22004,"h":22000,"centro":[9350,11569],"lugares":[["sede","MURÇA",9336,12330,330],["v","Candedo",14901,17382,187],["v","Jou",10881,3064,187],["viz","Alijó",6264,16407,165],["viz","Mirandela",18320,12680,165],["viz","Valpaços",16614,4643,165],["viz","Vila Pouca de Aguiar",4376,4770,165]],"mer":[],"plages":[],"eau":[],"falaises":[],"rios":[],"casas":[[9336,11573,3],[9434,11393,1],[9155,11553,1],[9472,11765,1],[9256,11757,1],[9671,11756,1],[9559,11207,1],[8960,11573,1],[9328,11203,1],[9149,11944,1],[8839,11756,1],[9878,11763,1],[8331,8445,0],[8525,8438,0],[8140,8445,0],[8249,8260,0],[8437,8640,0],[5608,11976,0],[5415,11982,0],[5827,11982,0],[5291,11792,0],[5628,11598,0],[13999,11006,0],[13796,10997,0],[14238,10988,0],[13726,10812,0],[13718,11199,0],[2287,9958,0],[2083,9955,0],[2159,9756,0],[2398,9762,0],[2380,10142,0],[14808,16924,0],[14689,17111,0],[15003,16925,0],[14909,17115,0],[15094,17118,0],[10874,2607,0],[10673,2593,0],[10967,2410,0],[11098,2596,0],[10791,2800,0],[11477,14009,2],[7639,4447,2],[15397,8255,2],[6957,6123,2],[15547,14115,2]],"tuk":[],"costa":false,"croquis":true,"u":150.0,"s0":0.09};
 const FORM_URL="https://script.google.com/macros/s/AKfycbxwnyOWuOgnQ2B0Tt80EEkKIetwzZYKj0BX6JDREwDRHdlRyLzmVsHvYoOz5avhBOp8Kw/exec";
 /* ---------- medição (só com consentimento) ---------- */
 const M=(function(){
@@ -406,7 +431,7 @@ const M=(function(){
 const NS="http://www.w3.org/2000/svg";
 const $=s=>document.querySelector(s);
 const svg=$("#mapa"),mundo=$("#mundo"),hero=$("#hero");
-const W=ZONE.w,H=ZONE.h,OS=1.8;
+const W=ZONE.w,H=ZONE.h,U=ZONE.u||18,K=U/15,OS=1.1*K,SMAX=ZONE.croquis?.45:2.4;
 const reduz=matchMedia("(prefers-reduced-motion: reduce)").matches;
 let seed=20261109;const R=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296};
 const rr=(a,b)=>a+R()*(b-a);
@@ -424,37 +449,42 @@ function distSeg(px,py,a,b){const dx=b[0]-a[0],dy=b[1]-a[1];const L=dx*dx+dy*dy|
 function distPoly(x,y,p){let m=1e9;for(let i=0;i<p.length-1;i++)m=Math.min(m,distSeg(x,y,p[i],p[i+1]));return m}
 function zona(x,y){
   if(dentro(MER,x,y)||dentro(EAU,x,y))return"agua";
-  if(ZONE.rios.some(p=>distPoly(x,y,p)<16))return"agua";
+  if(ZONE.rios.some(p=>distPoly(x,y,p)<16*K))return"agua";
   if(dentro(PLA,x,y))return"areia";
-  if(ZONE.falaises.some(p=>distPoly(x,y,p)<45))return"falesia";
+  if(ZONE.falaises.some(p=>distPoly(x,y,p)<25*K))return"falesia";
   return"terra";
 }
 
 /* ---------- calques ---------- */
 const camadaCasas=g({}),camadaObjs=g({}),camadaNomes=g({}),camadaFalas=g({});
-const TAM={city:58,town:42,village:30,suburb:24,hamlet:20,neighbourhood:15,cape:19};
-for(const[k,n,x,y]of ZONE.lugares){const t=TAM[k];if(!t)continue;const e=el("text",{x,y,class:"nome n-"+k,"font-size":t},camadaNomes);e.textContent=(k==="city"||k==="town")?n.toUpperCase():n}
+for(const[k,n,x,y,t,a]of ZONE.lugares){if(!t)continue;const e=el("text",{x,y,class:"nm nm-"+k,"font-size":t},camadaNomes);e.style.strokeWidth=f1(t*.24)+"px";if(a)e.setAttribute("transform",`rotate(${a} ${x} ${y})`);e.textContent=n}
 
-/* ---------- maisons, posées sur les vrais bâtiments ---------- */
+/* ---------- maisons dessinées, en grappes ---------- */
 const casas=[];
-const NOMES=["Casa do Sol","Ocean View T2","Blue Door Apartment","Vila Gaivota","Sunny Retreat","Casa Azulejo","Sea Breeze T1","Monte da Luz","Casa da Avó","Golden Coast Loft","Suites da Praia","Villa Alfarroba"];
-function casa(x,y,opts){
-  opts=opts||{};
-  const w=opts.w||rr(15,21),h=opts.h||rr(11,15),a=opts.a!=null?opts.a:rr(-14,14);
-  const tel=opts.tel!=null?opts.tel:R()<.6;
+const NOMES=["Casa do Sol","Ocean View T2 (vista parcial)","Blue Door Apartment","Vila Gaivota","Sunny Retreat","Casa da Avó Lurdes","Golden Coast Loft","Monte da Paz (com galo)","Cantinho do Sossego","Sea Breeze T1","Suites do Chefe","Casa Azulejo"];
+const TELHAS=["#c9603a","#c9603a","#b9532f","#d4703f","#2f6f9a"];
+function casa(x,y,o){
+  o=o||{};const monte=o.t===2;
+  if(o.t===3){const w=U*1.05,h=w*.7,e=g({class:"casa",transform:`translate(${f1(x)},${f1(y)})`},camadaCasas);
+    el("path",{class:"tr",fill:"#fbf7ee",d:`M${f1(-w/2)},${f1(-h/2)}h${f1(w)}v${f1(h)}h${f1(-w)}z`},e);
+    el("path",{class:"tecto tr",fill:"#c9603a",d:`M${f1(-w/2-w*.05)},${f1(-h/2)}L0,${f1(-h/2-w*.3)}L${f1(w/2+w*.05)},${f1(-h/2)}z`},e);
+    el("path",{class:"tr",fill:"#fbf7ee",d:`M${f1(-w*.72)},${f1(h/2)}v${f1(-h*1.6)}h${f1(w*.34)}v${f1(h*1.6)}z`},e);
+    el("path",{class:"tr",fill:"#f4b740",d:`M${f1(-w*.76)},${f1(-h*1.1)}L${f1(-w*.55)},${f1(-h*1.55)}L${f1(-w*.34)},${f1(-h*1.1)}z`},e);
+    el("path",{class:"tr",fill:"none",d:`M${f1(-w*.55)},${f1(-h*1.55)}v${f1(-h*.35)}M${f1(-w*.62)},${f1(-h*1.78)}h${f1(w*.14)}`},e);
+    el("path",{fill:"#2e3b45",d:`M${f1(-w*.1)},${f1(h/2)}v${f1(-h*.32)}a${f1(w*.1)},${f1(w*.1)} 0 0 1 ${f1(w*.2)},0v${f1(h*.32)}z`},e);
+    const c={x,y,el:e,cor:"#c9603a",nome:"Igreja Matriz"};casas.push(c);e.__c=c;return c}
+  const w=U*(monte?1.25:rr(.86,1)),h=w*(monte?.5:(o.t===1&&R()<.3?.9:.62)),a=rr(-3,3);
+  const cor=monte?"#c9603a":pick(TELHAS),tp=-h/2,r=w*(monte?.22:.42);
   const e=g({class:"casa",transform:`translate(${f1(x)},${f1(y)}) rotate(${f1(a)})`},camadaCasas);
-  const i=g(opts.pop?{class:"pop"}:{},e);
-  el("rect",{x:-w/2+3,y:-h/2+3,width:w,height:h,fill:"rgba(46,59,69,.18)"},i);
-  if(opts.piscina)el("rect",{x:w/2+3,y:-h/2+1,width:12,height:h-2,rx:2,fill:"#6cc7e0",stroke:"#2e3b45","stroke-width":1},i);
-  el("rect",{class:"tecto",x:-w/2,y:-h/2,width:w,height:h,fill:tel?"#c9603a":"#fbf7ee",stroke:"#2e3b45","stroke-width":1.3},i);
-  if(tel)el("line",{x1:-w/2+2,y1:0,x2:w/2-2,y2:0,stroke:"#2e3b45","stroke-width":1},i);
-  else el("rect",{x:w/2-6,y:-h/2+2,width:3.5,height:4.5,fill:"#fbf7ee",stroke:"#2e3b45","stroke-width":.8},i);
-  const c={x,y,el:e,tel,nome:NOMES[(casas.length*7)%NOMES.length]};casas.push(c);e.__c=c;return c;
+  const i=g(o.pop?{class:"pop"}:{},e);
+  el("path",{class:"tr",d:`M${f1(-w/2)},${f1(tp)}h${f1(w)}v${f1(h)}h${f1(-w)}z`,fill:"#fbf7ee"},i);
+  el("path",{class:"tecto tr",fill:cor,d:`M${f1(-w/2-w*.07)},${f1(tp)}L${f1(monte?-w*.3:0)},${f1(tp-r)}${monte?`L${f1(w*.3)},${f1(tp-r)}`:""}L${f1(w/2+w*.07)},${f1(tp)}z`},i);
+  el("rect",{x:f1(-w*.09),y:f1(h/2-h*.5),width:f1(w*.18),height:f1(h*.5),fill:"#2e3b45"},i);
+  el("rect",{class:"tr",x:f1(w*.2),y:f1(tp+h*.22),width:f1(w*.17),height:f1(w*.15),fill:"#9fd4e3"},i);
+  if(h>w*.8)el("rect",{class:"tr",x:f1(-w*.37),y:f1(tp+h*.15),width:f1(w*.17),height:f1(w*.15),fill:"#9fd4e3"},i);
+  const c={x,y,el:e,cor,nome:NOMES[(casas.length*7)%NOMES.length]};casas.push(c);e.__c=c;return c;
 }
-const dC=c=>Math.hypot(c[0]-ZONE.centro[0],c[1]-ZONE.centro[1]);
-const urbanas=ZONE.casas.filter(c=>c[2]===1).sort((a,b)=>dC(a)-dC(b)),rurais=ZONE.casas.filter(c=>c[2]===0).sort((a,b)=>dC(a)-dC(b));
-for(const c of urbanas.slice(0,2200))casa(c[0],c[1]);
-for(const c of rurais.slice(0,600)){const longe=dC(c)>1800;casa(c[0],c[1],longe?{piscina:R()<.5,tel:R()<.4,w:rr(18,24),h:rr(13,17)}:{piscina:R()<.06})}
+for(const c of ZONE.casas)casa(c[0],c[1],{t:c[2]});
 const livre=(x,y,d)=>casas.every(c=>Math.abs(c.x-x)>d||Math.abs(c.y-y)>d);
 
 /* ---------- bateaux, tuk-tuk, goélands ---------- */
@@ -466,7 +496,7 @@ function barco(x,y,tipo,pop){
   else{el("path",{d:"M-14,0 Q-12,-6 0,-6 L14,-3 L14,3 L0,6 Q-12,6 -14,0Z",fill:"#fff",stroke:"#2e3b45","stroke-width":1.2},i);el("rect",{x:-5,y:-3,width:8,height:6,rx:1,fill:"#1f4a9a"},i);el("path",{d:"M-16,0 L-30,-3 M-16,0 L-30,3",stroke:"rgba(255,255,255,.9)","stroke-width":1.5},e)}
   return e;
 }
-for(let i=0;i<22;i++){const p=pontoMar(120,1400);if(p)barco(p[0],p[1],R()<.4?"kayak":"barco")}
+for(let i=0;i<10;i++){const p=pontoMar(300*K/8,3000*K/8);if(p)barco(p[0],p[1],R()<.4?"kayak":"barco")}
 let tukPath=null,tuk=null;
 if(ZONE.tuk.length>1){
   tukPath=el("path",{d:"M"+ZONE.tuk.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"none"},camadaObjs);
@@ -475,15 +505,15 @@ if(ZONE.tuk.length>1){
   el("rect",{x:-2,y:-6,width:11,height:12,rx:2,fill:"#f4ecd8",stroke:"#2e3b45","stroke-width":.8},t);
 }
 const gaivotas=[];
-function gaivota(x,y){const e=g({},camadaObjs);const i=g({transform:`scale(${OS})`},e);el("path",{d:"M-8,0 Q-4,-5 0,0 Q4,-5 8,0",fill:"none",stroke:"#fff","stroke-width":2.6,"stroke-linecap":"round"},i);el("path",{d:"M-8,0 Q-4,-5 0,0 Q4,-5 8,0",fill:"none",stroke:"#2e3b45","stroke-width":1,"stroke-linecap":"round"},i);const o={e,x,y,vx:rr(.3,.7)*(R()<.5?-1:1),vy:rr(-.1,.1),f:R()*6,x0:x,y0:y};gaivotas.push(o);return o}
-for(let i=0;i<10;i++){const p=pontoMar(0,500);if(p)gaivota(p[0],p[1])}
+function gaivota(x,y){const e=g({},camadaObjs);const i=g({transform:`scale(${OS})`},e);el("path",{d:"M-8,0 Q-4,-5 0,0 Q4,-5 8,0",fill:"none",stroke:"#fff","stroke-width":2.6,"stroke-linecap":"round"},i);el("path",{d:"M-8,0 Q-4,-5 0,0 Q4,-5 8,0",fill:"none",stroke:"#2e3b45","stroke-width":1,"stroke-linecap":"round"},i);const o={e,x,y,vx:rr(.3,.7)*K*(R()<.5?-1:1),vy:rr(-.1,.1)*K,f:R()*6,x0:x,y0:y};gaivotas.push(o);return o}
+for(let i=0;i<6;i++){const p=pontoMar(0,1500*K/8);if(p)gaivota(p[0],p[1])}
 
 /* ---------- vue, glisser, zoom ---------- */
 let vw=0,vh=0,s=.5,smin=.1,vx=0,vy=0;
 function escala(){const opts=[100,200,500,1000,2000,5000];let m=opts.find(v=>v*s>=60)||5000;$("#escala-i").style.width=Math.round(m*s)+"px";$("#escala-t").textContent=m>=1000?(m/1000)+" km":m+" m"}
 function vista(){svg.setAttribute("viewBox",`${f1(vx)} ${f1(vy)} ${f1(vw/s)} ${f1(vh/s)}`);escala()}
-function limita(){s=Math.max(smin,Math.min(2.4,s));const ww=vw/s,hh=vh/s;vx=ww>=W?(W-ww)/2:Math.max(0,Math.min(W-ww,vx));vy=hh>=H?(H-hh)/2:Math.max(0,Math.min(H-hh,vy))}
-function medir(primeira){const r=svg.getBoundingClientRect();const cx=vx+vw/s/2,cy=vy+vh/s/2;vw=r.width;vh=r.height;smin=Math.max(vw/W,vh/H);if(primeira){s=Math.max(smin,Math.min(1.1,Math.max(vw/2700,.42)));const fx=vw<860?.5:.66,fy=vw<860?.66:.52;vx=ZONE.centro[0]-fx*vw/s;vy=ZONE.centro[1]-fy*vh/s}else{vx=cx-vw/s/2;vy=cy-vh/s/2}limita();vista()}
+function limita(){s=Math.max(smin,Math.min(SMAX,s));const ww=vw/s,hh=vh/s;vx=ww>=W?(W-ww)/2:Math.max(0,Math.min(W-ww,vx));vy=hh>=H?(H-hh)/2:Math.max(0,Math.min(H-hh,vy))}
+function medir(primeira){const r=svg.getBoundingClientRect();const cx=vx+vw/s/2,cy=vy+vh/s/2;vw=r.width;vh=r.height;smin=Math.max(vw/W,vh/H);if(primeira){s=Math.max(smin,Math.min(SMAX,ZONE.s0||Math.max(vw/2700,.42)));const fx=vw<860?.5:.66,fy=vw<860?.66:.52;vx=ZONE.centro[0]-fx*vw/s;vy=ZONE.centro[1]-fy*vh/s}else{vx=cx-vw/s/2;vy=cy-vh/s/2}limita();vista()}
 medir(true);addEventListener("resize",()=>medir(false));
 function zoom(f,px,py){const r=svg.getBoundingClientRect();px=px==null?r.width/2:px;py=py==null?r.height/2:py;const wx=vx+px/s,wy=vy+py/s;s*=f;limita();vx=wx-px/s;vy=wy-py/s;limita();vista()}
 $("#zmais").addEventListener("click",()=>zoom(1.4));$("#zmenos").addEventListener("click",()=>zoom(1/1.4));
@@ -496,41 +526,38 @@ svg.addEventListener("pointermove",e=>{if(!down)return;const dx=e.clientX-down.x
 function fimArrasto(e){if(!down)return;const d=down;down=null;svg.classList.remove("glisse");if(!d.mov&&e.type==="pointerup"&&e.detail<2)clique(e,d.t)}
 svg.addEventListener("pointerup",fimArrasto);svg.addEventListener("pointercancel",fimArrasto);
 
-/* ---------- toast et bulles ---------- */
-let tt;function toast(t){const e=$("#toast");e.textContent=t;e.classList.add("on");clearTimeout(tt);tt=setTimeout(()=>e.classList.remove("on"),2600)}
-function fala(x,y,t,cor){const e=g({transform:`translate(${f1(x)},${f1(y)}) scale(${f1(1/s*100)/100})`},camadaFalas);const i=g({class:"pop"},e);const tx=el("text",{x:0,y:-26,"text-anchor":"middle",class:"fala-t",fill:cor||"#18222b"},i);tx.textContent=t;const w=tx.getComputedTextLength()+22;el("rect",{x:-w/2,y:-47,width:w,height:30,rx:9,fill:"#fff",stroke:"#2e3b45","stroke-width":1.6},i);el("path",{d:"M-6,-18 L0,-9 L6,-18",fill:"#fff",stroke:"#2e3b45","stroke-width":1.6},i);el("rect",{x:-7,y:-20,width:14,height:3,fill:"#fff"},i);i.appendChild(tx);setTimeout(()=>e.remove(),2800);return e}
+/* ---------- bulles, au point cliqué ---------- */
+function fala(x,y,t,cor,dur){const e=g({transform:`translate(${f1(x)},${f1(y)}) scale(${f1(1/s*100)/100})`},camadaFalas);const i=g({class:"pop"},e);const tx=el("text",{x:0,y:-26,"text-anchor":"middle",class:"fala-t",fill:cor||"#18222b"},i);tx.textContent=t;const w=tx.getComputedTextLength()+22;el("rect",{x:-w/2,y:-47,width:w,height:30,rx:9,fill:"#fff",stroke:"#2e3b45","stroke-width":1.6},i);el("path",{d:"M-6,-18 L0,-9 L6,-18",fill:"#fff",stroke:"#2e3b45","stroke-width":1.6},i);el("rect",{x:-7,y:-20,width:14,height:3,fill:"#fff"},i);i.appendChild(tx);setTimeout(()=>e.remove(),dur||3400);return e}
+function toast(t,x,y,dur){if(x!=null)fala(x,y,t,"#18222b",dur)}
+function saco(a,prim){let b=[],p=prim;return()=>{if(p){const f=p;p=null;return f}if(!b.length){b=a.slice();for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}}return b.pop()}}
 
 /* ---------- clics ---------- */
-const PERGUNTAS=["Qual é a password do wifi?","O wifi não funciona!","Posso fazer check-in mais cedo?","Posso sair mais tarde?","A chave não abre a porta.","O código da caixa não dá.","Estou à porta. Onde entro?","Onde posso estacionar?","Posso deixar as malas antes?","Não há água quente!","Como se liga o ar condicionado?","Onde estão as toalhas extra?","Onde deito o lixo?","Recomenda um restaurante?","Chegamos às 3h. Pode ser?","Posso levar o meu cão?","Somos mais dois. Há problema?","Esqueci-me do carregador.","Faz desconto?","Tenho de tirar os lençóis?"];
-const VIZINHOS=["As malas de rodas às 3h…","O lixo à porta, outra vez.","Quem bate assim com a porta?","Festa outra vez no 3.º esq.?","Tocaram à minha campainha às 2h."];
-const CRITICAS=["«Não estava limpo.» ★★★","«As fotos enganam.» ★★","«Demorou a responder.» ★★★","«Quase dormimos na rua.» ★★","«Faltava papel higiénico.» ★★★"];
-const FRASES={
-  agua:["Mais um barco para as grutas.","Kayak lançado. Volta ao fim do dia, cheio de areia.","Barco na água. Os hóspedes vão perguntar onde se aluga."],
-  areia:["Chapéu de sol plantado. Às 9h já não há lugar.","Toalha estendida. Lugar marcado até setembro.","Mais um chapéu de sol na praia."],
-  falesia:["Gaivota instalada. Vai roubar um pastel de nata.","Gaivota no posto de vigia.","Esta gaivota já tem mais avaliações do que você."],
-  rio:["Mais um barco no rio. Os hóspedes vão perguntar onde se aluga.","Caiaque na água. Volta ao fim da tarde, molhado e feliz.","Barco lançado. O pequeno-almoço é que não vem incluído."],
-  terra:n=>`Novo AL: «${n}». Primeira pergunta em 3, 2, 1…`
-};
+const PERG=saco(["O cão é pequenino. São três.","Chegamos às 4h. Deixa a chave debaixo do tapete?","Nas fotos havia piscina. Onde está?","Partimos um copo. E a mesa.","Uma festa pequenina, pode ser? Uns 40.","A minha sogra vem também. Dorme no sofá.","Faz desconto se eu deixar 5 estrelas?","O wifi está lento. Tenho reunião às 9h.","Check-out às 18h? O voo é às 23h.","Comemos o queijo do frigorífico. Era para nós?","O galo do vizinho canta às 5h. Pode falar com ele?","Há secador? E ferro? E máquina de cápsulas? E Netflix?","Não encontro a casa. O GPS diz que estou em Espanha.","A cama de casal são duas de solteiro, certo?","4.º andar sem elevador? Trazemos 6 malas.","Chegamos amanhã. Ou hoje. Que dia é hoje?","Esquecemo-nos do peluche. É urgente. Muito urgente.","O ar condicionado faz barulho de avião.","Podemos entrar às 10h? Da manhã. Hoje.","O papel vai para o lixo? A sério?","Qual é a password do wifi? E a da Netflix?"],"Afinal somos 8. Faz mal?");
+const VIZ=saco(["Malas de rodas às 3h. Outra vez.","Quem deixou 14 garrafas no ecoponto às 2h?","O do 2.º esq. está a cantar fado. Mal.","Tocaram-me à campainha a pedir a password do wifi.","Há um flamingo insuflável no meu terraço."]);
+const CRIT=saco(["«Vista mar, se se pendurar na varanda.» ★★","«Faltava o saca-rolhas. Inaceitável.» ★","«O anfitrião demorou 3 horas a responder.» ★★","«Tudo ótimo, menos o galo.» ★★★","«O colchão tinha personalidade.» ★★"]);
+const F_AGUA=saco(ZONE.costa===false?["Barco no rio. O pequeno-almoço não está incluído.","Caiaque na água. Volta molhado e feliz.","Mais um barco. Os hóspedes perguntam se está incluído."]:["Barco lançado. Os hóspedes perguntam se está incluído.","Kayak na água. Volta ao fim do dia, sem um remo.","Mais um barco. Em agosto, até o mar está cheio."]);
+const F_AREIA=saco(["Chapéu de sol plantado às 7h. Lugar marcado até setembro.","Toalha estendida. Ninguém mexe nesta toalha.","Chapéu de sol. O vizinho de toalha já ligou a coluna."]);
+const F_FAL=saco(["Gaivota instalada. Já roubou um pastel de nata.","Esta gaivota tem mais avaliações do que você.","Gaivota no posto. Vigia as tostas mistas."]);
 let nObjs=0;
 function clique(e,alvo){
-  const p=mundoPt(e);
+  const p=mundoPt(e),y0=p.y-U*.6;
   const c=alvo.closest&&alvo.closest(".casa");
   M.ev("mapa",{z:c?"casa":zona(p.x,p.y)});
-  if(c&&c.__c){const k=c.__c;const tc=k.el.querySelector(".tecto");tc.setAttribute("fill","#f4b740");setTimeout(()=>tc.setAttribute("fill",k.tel?"#c9603a":"#fbf7ee"),900);const r=R();if(r<.7)fala(k.x,k.y-6,pick(PERGUNTAS));else if(r<.9)fala(k.x,k.y-6,pick(VIZINHOS),"#1f4a9a");else fala(k.x,k.y-6,pick(CRITICAS),"#c4572f");return}
-  if(nObjs>90){toast("Chega. Isto já parece agosto.");return}
+  if(c&&c.__c){const k=c.__c;const tc=k.el.querySelector(".tecto");tc.setAttribute("fill","#f4b740");setTimeout(()=>tc.setAttribute("fill",k.cor),900);const r=Math.random(),y=k.y-U*.8;if(r<.65)fala(k.x,y,PERG());else if(r<.85)fala(k.x,y,VIZ(),"#1f4a9a");else fala(k.x,y,CRIT(),"#c4572f");return}
+  if(nObjs>90){toast("Chega. Isto já parece agosto.",p.x,y0);return}
   nObjs++;
   const z=zona(p.x,p.y);
-  if(z==="agua"){barco(p.x,p.y,R()<.5?"kayak":"barco",true);toast(pick(ZONE.costa===false?FRASES.rio:FRASES.agua))}
-  else if(z==="areia"){const e=g({transform:`translate(${f1(p.x)},${f1(p.y)}) scale(${OS})`},camadaObjs);const i=g({class:"pop"},e);el("rect",{x:-4,y:2,width:12,height:7,rx:1,fill:pick(["#1f4a9a","#c4572f","#f4b740","#2f8f6b"]),stroke:"#2e3b45","stroke-width":.6,transform:"rotate(-8)"},i);const cor=pick(["#c4572f","#1f4a9a","#2f8f6b"]);for(let k=0;k<8;k++){const a1=k/8*Math.PI*2,a2=(k+1)/8*Math.PI*2;el("path",{d:`M0,0 L${f1(Math.cos(a1)*11)},${f1(Math.sin(a1)*11)} A11,11 0 0 1 ${f1(Math.cos(a2)*11)},${f1(Math.sin(a2)*11)}Z`,fill:k%2?"#fff":cor,stroke:"#2e3b45","stroke-width":.6},i)}el("circle",{r:1.6,fill:"#2e3b45"},i);toast(pick(FRASES.areia))}
-  else if(z==="falesia"){const o=gaivota(p.x,p.y);o.vx=0;o.vy=0;o.pousada=180;toast(pick(FRASES.falesia))}
-  else{if(!livre(p.x,p.y,13)){toast(`Já há aqui um AL. ${DATA?DATA.conc_em_m:"Em Lagos"} não há falta.`);nObjs--;return}const k=casa(p.x,p.y,{pop:true});setTimeout(()=>fala(k.x,k.y-6,pick(PERGUNTAS)),500);toast(FRASES.terra(k.nome))}
+  if(z==="agua"){barco(p.x,p.y,R()<.5?"kayak":"barco",true);toast(F_AGUA(),p.x,y0)}
+  else if(z==="areia"){const e=g({transform:`translate(${f1(p.x)},${f1(p.y)}) scale(${OS})`},camadaObjs);const i=g({class:"pop"},e);el("rect",{x:-4,y:2,width:12,height:7,rx:1,fill:pick(["#1f4a9a","#c4572f","#f4b740","#2f8f6b"]),stroke:"#2e3b45","stroke-width":.6,transform:"rotate(-8)"},i);const cor=pick(["#c4572f","#1f4a9a","#2f8f6b"]);for(let k=0;k<8;k++){const a1=k/8*Math.PI*2,a2=(k+1)/8*Math.PI*2;el("path",{d:`M0,0 L${f1(Math.cos(a1)*11)},${f1(Math.sin(a1)*11)} A11,11 0 0 1 ${f1(Math.cos(a2)*11)},${f1(Math.sin(a2)*11)}Z`,fill:k%2?"#fff":cor,stroke:"#2e3b45","stroke-width":.6},i)}el("circle",{r:1.6,fill:"#2e3b45"},i);toast(F_AREIA(),p.x,y0)}
+  else if(z==="falesia"){const o=gaivota(p.x,p.y);o.vx=0;o.vy=0;o.pousada=180;toast(F_FAL(),p.x,y0)}
+  else{if(!livre(p.x,p.y,U*.95)){toast(`Já há aqui um AL. ${DATA?DATA.conc_em_m:"Em Lagos"} não há falta.`,p.x,y0);nObjs--;return}const k=casa(p.x,p.y,{pop:true,t:1});fala(k.x,k.y-U*.8,`Novo AL: «${k.nome}».`,"#18222b",1500);setTimeout(()=>fala(k.x,k.y-U*.8,PERG()),1600)}
 }
 
 /* ---------- animation d'ambiance ---------- */
 const tukLen=tukPath?tukPath.getTotalLength():0;const t0=performance.now();
 function anima(t){
   if(tuk){const d=((t-t0)*.03)%(tukLen*2);const pos=d<tukLen?d:tukLen*2-d;const p=tukPath.getPointAtLength(pos),q=tukPath.getPointAtLength(Math.min(tukLen,pos+1));let ang=Math.atan2(q.y-p.y,q.x-p.x)*180/Math.PI;if(d>=tukLen)ang+=180;tuk.setAttribute("transform",`translate(${f1(p.x)},${f1(p.y)}) rotate(${f1(ang)})`)}
-  for(const o of gaivotas){if(o.pousada>0){o.pousada--;if(o.pousada===0){o.vx=rr(.4,.8)*(R()<.5?-1:1);o.vy=-.3}}o.x+=o.vx;o.y+=o.vy+Math.sin(t/700+o.f)*.15;if(Math.abs(o.x-o.x0)>1500)o.vx=-o.vx;if(Math.abs(o.y-o.y0)>500)o.vy=-o.vy;const fl=o.vx===0?1:.6+Math.abs(Math.sin(t/180+o.f))*.4;o.e.setAttribute("transform",`translate(${f1(o.x)},${f1(o.y)}) scale(1,${f1(fl)})`)}
+  for(const o of gaivotas){if(o.pousada>0){o.pousada--;if(o.pousada===0){o.vx=rr(.4,.8)*K*(R()<.5?-1:1);o.vy=-.3*K}}o.x+=o.vx;o.y+=o.vy+Math.sin(t/700+o.f)*.15*K;if(Math.abs(o.x-o.x0)>1500*K)o.vx=-o.vx;if(Math.abs(o.y-o.y0)>500*K)o.vy=-o.vy;const fl=o.vx===0?1:.6+Math.abs(Math.sin(t/180+o.f))*.4;o.e.setAttribute("transform",`translate(${f1(o.x)},${f1(o.y)}) scale(1,${f1(fl)})`)}
   requestAnimationFrame(anima);
 }
 if(!reduz)requestAnimationFrame(anima);else if(tuk){const p=tukPath.getPointAtLength(tukLen/2);tuk.setAttribute("transform",`translate(${p.x},${p.y})`)}
